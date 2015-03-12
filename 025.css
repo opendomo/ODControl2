@@ -1,0 +1,13 @@
+.DI a. .SV .input{margin-right:32px;}
+.DI a.OFF{width:18px;height:18px;background-color:#ccc;border-radius:50%;box-shadow:#ccc 0 -1px 7px 1px,inset #ccc 0 -1px 9px,#000 0 2px 5px;}
+.DI a.ON{width:18px;height:18px;background-color:#4F95EB;border-radius:50%;box-shadow:#6982A0 0 -1px 7px 1px,#000 2px 5px 9px;border:1px solid #3591ff;}
+textarea.tpl{width:100%;height:300px;padding-top:10px;border-radius:9px;margin-top:10px}
+textarea.err{width:100%;height:150px;padding-top:10px;border-radius:9px;margin-top:10px}
+#loading:after{content: "Loading...";}
+#loading_cf:after{content: "Loading Configurator ...";}
+input#command,input#ODControlName{text-align:left;padding-left:10px}
+textarea#tacmd{background-color:#111;color:#fff;padding-left:10px}
+input#datein{width:200px;text-align:center;}
+select#datetype{width:200px;float:right;padding-left:10px}
+a#hme2.cat,a#back.cat{width:40%}
+input[id^=input]{text-align: left;padding-left: 10px;width: 150px;}
