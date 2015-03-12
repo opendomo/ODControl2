@@ -15,7 +15,7 @@
 <link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
 <link rel=stylesheet href=020.css />
 <script type=text/javascript>
-var L=localStorage,D=document,uid='000000000000',ver='odc-test';
+var L=localStorage,D=document,uid='000000000001',ver='odc-test';
 </script>
 </head>
 <body onload=\"JS('http://c.opendomo.com/rc/hme_@VER@.js')\">
