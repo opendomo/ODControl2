@@ -1,0 +1,10 @@
+var ZTG_HI="Countdown trigger: the value of the destination port is updated after a number of seconds. The countdown is active when the source port is ON.";
+var TRG_HI="Conditional trigger: the value of the destination port is updated when the condition is reached.";
+var MDB_HI="Modbus port: virtual ports that read or write values from or to modbus devices.";
+var SCH_HI="Scheduler: the value of the port is ON or OF according to scheduler settings.";
+var GRP_HI="Group: this port is the result of an operation between two ports (A and B).";
+var TTG_HI="Time trigger: update port on specified time.";
+var DTG_HI="Time trigger: update port on specified hour/day.";
+var RDV_HI="Remote device: this is the name of the remote device (ODControl name). For using this capability each device needs a different name.";
+var RPT_HI="Remote port: The value of this port is obtained from the remote device. ";
+var RDV_WI="You need to create a Remote Device port first";

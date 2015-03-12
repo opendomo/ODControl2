@@ -9,40 +9,69 @@
 */
 
 	$HTML_hme="<!DOCTYPE html>
-<html><head>
-<title>ODControl2</title>
-<meta name='apple-mobile-web-app-capable' content='yes'/>
+<html><head><title></title>
 <meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
-<link rel=apple-touch-icon href='http://cloud.opendomo.com/odctp/ODControl2.png'/>
-<link rel=stylesheet href=s.css />
-<script>
-var D=document;
-var L=localStorage;
-function G(tag){return D.getElementsByTagName(tag);}
-function SA(n,a,v){n.setAttribute(a,v);return n;}
-function AC(p,c){p.appendChild(c);}
-function CE(t,c,i){var e=D.createElement(t); if(c&&c!='')SA(e,'class',c);if(i&&i!='')SA(e,'id',i); return e;}
-function CT(t){return D.createTextNode(t);}      
-function JS(n){var f=CE('script');SA(f,'type','text/javascript');SA(f,'src', n);AC(G('head')[0],f);}
-JS('a.js');
+<meta name=apple-mobile-web-app-capable content=yes/>
+<link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
+<link rel=stylesheet href=020.css />
+<script type=text/javascript>
+var L=localStorage,D=document,uid='000000000000',ver='odc-test';
 </script>
 </head>
-<body id='log'><div id='main'><div id='h'><a id='hh' href='hme'>Home</a><a id='hc' href='cnf'>Config</a></div><div id='b'>Loading...</div><a id='f' href='http://www.opendomo.com'></a></div></body>
-</html>";
-
-
-	$HTML_cnf="<!DOCTYPE html>
-<html><head>
-<title>ODControl2</title>
-<meta name='apple-mobile-web-app-capable' content='yes'/>
-<meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
-<link rel=apple-touch-icon href='http://cloud.opendomo.com/odctp/ODControl2.png'/>
-<!--<link rel=stylesheet href=s.css /> -->
-<script src='http://cloud.opendomo.com/odctp/global2.0.0.js'></script>
-</head>
+<body onload=\"JS('http://c.opendomo.com/rc/hme_@VER@.js')\">
 <body>
+<div id='main'>
+<div class='t'>
+<img class='tr' src='200.svg'/>
+<img class='t0' src='201.svg'/>
+<img class='tp' src='202.svg'/>
+<img class='te' src='203.svg'/>
+<img class='tn' src='204.svg'/>
+<img class='td' src='205.svg'/>
+<img class='to' src='206.svg'/>
+<img class='tm' src='207.svg'/>
+<img class='to' src='206.svg'/>
+</div>
+<div id='h'></div><ul id='b'><li id='loading'></li></ul><a id='f'></a></div>
+<script src='002.js'></script>
 </body>
-</html>";
+</html>
+
+";
+
+
+	$HTML_cnf="
+<!DOCTYPE html>
+<html><head><title>@XXX@</title>
+<meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
+<meta name=apple-mobile-web-app-capable content=yes/>
+<link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
+<link rel=stylesheet href=020.css />
+<script type=text/javascript>
+var L=localStorage,D=document,uid='000000000000',ver='odc-test';
+</script>
+</head>
+<body onload=\"
+for(var i=100;i<=158;i++)JS(i+'.js');
+JS('160.js');
+\">
+<div id='main'>
+<div class='t'>
+<img class='tr' src='200.svg'/>
+<img class='t0' src='201.svg'/>
+<img class='tp' src='202.svg'/>
+<img class='te' src='203.svg'/>
+<img class='tn' src='204.svg'/>
+<img class='td' src='205.svg'/>
+<img class='to' src='206.svg'/>
+<img class='tm' src='207.svg'/>
+<img class='to' src='206.svg'/>
+</div>
+<div id='h'></div><ul id='b'><li id='loading_cf'></li></ul><a id='f'></a></div>
+<script src='002.js'></script>
+</body>
+</html>
+";
 	$p = intval($_REQUEST['p']);
 
 	if (isset($_REQUEST['cmd'])) {
