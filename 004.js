@@ -16,8 +16,25 @@ function V(c){return ID(c).value;}
 function n(c){if(c.indexOf("DONE")==-1)console.log(c+":"+L["$"+c]);}
 var a,b,t=0;
 function ci(){
-var tx=this.responseText;
-if(tx=="E003"){if(t>3){alert(t);t=0;return;}SC(c, ci);t++;return;}
-t=0;var d=ID("b");a=tx.split("\\n");for(var i=0;i<a.length;i++){b=a[i].split(":");if(a[i]!="DONE")try{AC(d,AM(b[1].substring(0,2),b[0],b[2]));}catch(e){}}}
-function TB(i,l,f) {AC(ID('h'),CE('a','cat',i));AC(ID(i),CT(l));ID(i).href='javascript:'+f+'();';}
+	var tx=this.responseText;
+	if(tx=="E003"){
+		if(t>3){
+			alert(t);t=0;return;
+		}
+		SC(c, ci);t++;return;
+	}
+	t=0;
+	var d=ID("b");
+	a=tx.split("\\n");
+	for(var i=0;i<a.length;i++){
+		b=a[i].split(":");
+		if(a[i]!="DONE")try{
+			AC(d,AM(b[1].substring(0,2),b[0],b[2]));
+		}catch(e){}}
+	}
+function TB(i,l,f) {
+	AC(ID('h'),CE('a','cat',i));
+	AC(ID(i),CT(l));
+	ID(i).href='javascript:'+f+'();';
+}
 JS("005.js");
