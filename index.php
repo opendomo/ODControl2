@@ -71,7 +71,7 @@ ai006:AXH_:
 ai007:AXH_:
 ";				break;			
 			
-
+			case "lsc cfg":
 			case "lsc 24-47":
 			case "lsc+24-47":
 				echo "
