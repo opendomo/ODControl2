@@ -6,7 +6,7 @@ function ID(id){return D.getElementById(id);}
 function CT(t){return D.createTextNode(t);}
 function SC(c,f){
 console.log(c);var x=AJ();
-x.open("GET",c.replace(/ /g,"+"),false);
+x.open("GET",c.replace(/ /g,"+"));
 x.setRequestHeader("Cache-Control","no-cache,max-age=0");
 x.setRequestHeader("Pragma","no-cache");
 x.send(null);
