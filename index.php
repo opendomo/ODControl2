@@ -1,5 +1,6 @@
 <?php
 	$VERSION="2.0.0";
+	$UID="1234567890AB";
 
 /* Site structure
   #hme -> Home
@@ -9,71 +10,8 @@
 */
 
 	$HTML_hme=file_get_contents("000.html");
-	/*"<!DOCTYPE html>
-<html><head><title></title>
-<meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
-<meta name=apple-mobile-web-app-capable content=yes/>
-<link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
-<link rel=stylesheet href=020.css />
-<script type=text/javascript>
-var L=localStorage,D=document,uid='000000000001',ver='odc-test';
-</script>
-</head>
-<body onload=\"JS('http://c.opendomo.com/rc/hme_@VER@.js')\">
-<body>
-<div id='main'>
-<div class='t'>
-<img class='tr' src='200.svg'/>
-<img class='t0' src='201.svg'/>
-<img class='tp' src='202.svg'/>
-<img class='te' src='203.svg'/>
-<img class='tn' src='204.svg'/>
-<img class='td' src='205.svg'/>
-<img class='to' src='206.svg'/>
-<img class='tm' src='207.svg'/>
-<img class='to' src='206.svg'/>
-</div>
-<div id='h'></div><ul id='b'><li id='loading'></li></ul><a id='f'></a></div>
-<script src='002.js'></script>
-</body>
-</html>
-
-"; */
-
-
 	$HTML_cnf=file_get_contents("001.html");
-/*	"
-<!DOCTYPE html>
-<html><head><title>@XXX@</title>
-<meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
-<meta name=apple-mobile-web-app-capable content=yes/>
-<link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
-<link rel=stylesheet href=020.css />
-<script type=text/javascript>
-var L=localStorage,D=document,uid='000000000000',ver='odc-test';
-</script>
-</head>
-<body onload=\"
-for(var i=100;i<=158;i++)JS(i+'.js');
-JS('160.js');
-\">
-<div id='main'>
-<div class='t'>
-<img class='tr' src='200.svg'/>
-<img class='t0' src='201.svg'/>
-<img class='tp' src='202.svg'/>
-<img class='te' src='203.svg'/>
-<img class='tn' src='204.svg'/>
-<img class='td' src='205.svg'/>
-<img class='to' src='206.svg'/>
-<img class='tm' src='207.svg'/>
-<img class='to' src='206.svg'/>
-</div>
-<div id='h'></div><ul id='b'><li id='loading_cf'></li></ul><a id='f'></a></div>
-<script src='002.js'></script>
-</body>
-</html>
-"; */
+
 	$p = intval($_REQUEST['p']);
 
 	if (isset($_REQUEST['cmd'])) {
@@ -99,7 +37,7 @@ JS('160.js');
 
 
 			case 'ver':
-				echo "odctl versn $VERSION 12:28:11 Jun 16 2013\n";
+				echo "odctl versn $VERSION $UID 12:28:11 Jun 16 2013\n";
 				echo "DONE";
 				break;
 
@@ -164,36 +102,6 @@ vt023:VXH_:
 ";
 				break;
 
-			case "lst 24-47":
-			case "lst+24-47":
-				echo "
-DV:vt000:OFF
-DV:vt001:OFF
-DV:vt002:OFF
-DV:vt003:OFF
-DV:vt004:OFF
-DV:vt005:OFF
-DV:vt006:OFF
-DV:vt007:OFF
-XX:vt008:
-XX:vt009:
-XX:vt010:
-XX:vt011:
-XX:vt012:
-XX:vt013:
-XX:vt014:
-XX:vt015:
-XX:vt016:
-XX:vt017:
-XX:vt018:
-XX:vt019:
-XX:vt020:
-XX:vt021:
-XX:vt022:
-XX:vt023:
-";
-				break;
-
 			case "lsc 48-71":
 			case "lsc+48-71":
 				echo "
@@ -221,35 +129,6 @@ vt044:VXH_:
 vt045:VXH_:
 vt046:VXH_:
 vt047:VXH_:
-";
-				break;
-
-			case "lst 48-71":
-			case "lst+48-71":
-				echo "XX:vt024:
-XX:vt025:
-XX:vt026:
-XX:vt027:
-XX:vt028:
-XX:vt029:
-XX:vt030:
-XX:vt031:
-XX:vt032:
-XX:vt033:
-XX:vt034:
-XX:vt035:
-XX:vt036:
-XX:vt037:
-XX:vt038:
-XX:vt039:
-XX:vt040:
-XX:vt041:
-XX:vt042:
-XX:vt043:
-XX:vt044:
-XX:vt045:
-XX:vt046:
-XX:vt047:
 ";
 				break;
 		
