@@ -25,7 +25,7 @@ function ci(){
 	}
 	t=0;
 	var d=ID("b");
-	a=tx.split("\\n");
+	a=tx.split("\n");
 	for(var i=0;i<a.length;i++){
 		b=a[i].split(":");
 		if(a[i]!="DONE")try{
