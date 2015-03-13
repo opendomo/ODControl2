@@ -138,7 +138,11 @@ vt047:VXH_:
 				echo "di002:do002:p\n";
 				echo "di003:do003:d\n";
 				break;
-
+				
+			case "net show":
+				echo "mac:00:04:a3:6c:5f:37 ip:192.168.1.60 netmask:255.255.255.0 gateway:192.168.1.1 ntp:89.248.106.98 ev:255.255.255.255 webuiport:80 webcfport:81 protoport:1729 webuiaccess:any webcfaccess:any protoaccess:any";
+				break;
+				
 			case "snm":
 			case "set":
 				echo "DONE";
