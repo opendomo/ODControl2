@@ -13,14 +13,15 @@ x.send(null);
 x.onload=f;
 }
 function V(c){return ID(c).value;}
-function n(c){if(c.indexOf("DONE")==-1)console.log(c+":"+L["$"+c]);}
+function n(c){
+	var r = c.srcElement.responseText;
+	if(r.indexOf("DONE")==-1) console.log(r);
+}
 var a,b,t=0;
 function ci(){
 	var tx=this.responseText;
 	if(tx=="E003"){
-		if(t>3){
-			alert(t);t=0;return;
-		}
+		if(t>3){alert(t);t=0;return;}
 		SC(c, ci);t++;return;
 	}
 	t=0;
