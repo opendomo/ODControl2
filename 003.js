@@ -1,6 +1,6 @@
-L[' ']="Invalid values";
-L["frequency"]="4000";
-function RL(){L.clear();D.location.reload();}
+localStorage[' ']="Invalid values";
+localStorage["frequency"]="4000";
+function RL(){localStorage.clear();D.location.reload();}
 JS('060.js');
 JS('061.js');
 JS('062.js');
