@@ -8,7 +8,8 @@
 
 */
 
-	$HTML_hme="<!DOCTYPE html>
+	$HTML_hme=file_get_contents("000.html");
+	/*"<!DOCTYPE html>
 <html><head><title></title>
 <meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
 <meta name=apple-mobile-web-app-capable content=yes/>
@@ -37,10 +38,11 @@ var L=localStorage,D=document,uid='000000000001',ver='odc-test';
 </body>
 </html>
 
-";
+"; */
 
 
-	$HTML_cnf="
+	$HTML_cnf=file_get_contents("001.html");
+/*	"
 <!DOCTYPE html>
 <html><head><title>@XXX@</title>
 <meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
@@ -71,7 +73,7 @@ JS('160.js');
 <script src='002.js'></script>
 </body>
 </html>
-";
+"; */
 	$p = intval($_REQUEST['p']);
 
 	if (isset($_REQUEST['cmd'])) {
@@ -102,6 +104,7 @@ JS('160.js');
 				break;
 
 			case "lsc":
+			case "lsc hme":
 			case "lsc 00-23":
 			case "lsc+00-23":
 				echo "do000:DOM_:OFF
@@ -129,35 +132,7 @@ ai005:AXH_:
 ai006:AXH_:
 ai007:AXH_:
 ";				break;			
-			case "lst":
-			case "lst 00-23":
-			case "lst+00-23":
-				echo "DO:do000:OFF
-DO:do001:OFF
-DO:do002:OFF
-DO:do003:OFF
-DO:do004:OFF
-DO:do005:ON
-DO:do006:ON
-DO:do007:OFF
-DI:di000:ON
-DI:di001:OFF
-XX:di002:
-XX:di003:
-XX:di004:
-XX:di005:
-XX:di006:
-XX:di007:
-AI:ai000:+0053.0000
-XX:ai001:
-XX:ai002:
-XX:ai003:
-XX:ai004:
-XX:ai005:
-XX:ai006:
-AI:ai007:+1000.0000
-";
-				break;
+			
 
 			case "lsc 24-47":
 			case "lsc+24-47":
