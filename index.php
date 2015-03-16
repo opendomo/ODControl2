@@ -164,7 +164,7 @@ $OFF_:DVH_:OFF:PER:OFF
 			default:
 				die ("E301:$cmd");
 		}
-		echo "DONE ($cmd)";
+		echo "DONE";
 		exit;
 	}
 
