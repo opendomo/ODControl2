@@ -23,8 +23,9 @@ var cr=send_command("lsc+00-23;lsc+24-47;lsc+48-71;lsc+72-96");
 if(cr.length<10){alert("Error loading ports");}
 var pts=cr.split("\n");
 var total=0;
+ports=[];
 for(var i=0;i<pts.length;i++){
-	if(pts[i]!="DONE" && pts[i].indexOf(":")>0){
+	if(pts[i].indexOf(":")>0){
 		var s=pts[i].split(":");
 		var pn=s[0];
 		var pf=s[1]?s[1]:"";
@@ -32,7 +33,7 @@ for(var i=0;i<pts.length;i++){
 		var ptag=pf.substring(3,4);
 		var pval=s[2];
 		var ptol=s[5];
-		ports[i]=new Array(pn,pf.substring(0,2),pf.substring(3,4),pf,pval,s[3],s[4],ptol);
+		ports.push(new Array(pn,pf.substring(0,2),pf.substring(3,4),pf,pval,s[3],s[4],ptol));
 		total++;
 	}
 }

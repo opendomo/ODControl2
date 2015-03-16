@@ -1,5 +1,5 @@
 function errorHandler(e) {
-   warn("Runtime error. Reloading menu.");
+   console.log("Runtime error. Reloading menu.");
    loadMenu();
 }
 
