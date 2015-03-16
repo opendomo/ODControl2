@@ -20,8 +20,8 @@ var it;
 function HME(){
 var h=ID("adv");if(!h){ID("h").innerHTML="";
 TB('hme','Home','HME');
-TB('cfg','Config','CFG');
-TB('adv','ODC Configurator',"sadv");
+TB('cfg','Settings','CFG');
+TB('adv','Configure','sadv');
 SA(ID("h"),"class","hme");
 }
 SEL("hme");
