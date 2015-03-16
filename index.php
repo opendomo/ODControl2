@@ -31,7 +31,7 @@
 				die($HTML_hme);
 				break;
 
-			case "cnf":
+			case "adv":
 				die($HTML_cnf);
 				break;
 
