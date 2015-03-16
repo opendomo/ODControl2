@@ -27,7 +27,7 @@ function send_command(strURL)
 				return resp;
 			}
 		}
-		respo=respo+xmlHttp.responseText+"\\n";
+		respo=respo+xmlHttp.responseText+"\n";
 	}
 	return respo;
 }
