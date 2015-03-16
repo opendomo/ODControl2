@@ -189,5 +189,4 @@ $OFF_:DVH_:OFF:PER:OFF
 	<?php 
 		exit;
 	}
-
 ?>
