@@ -6,4 +6,4 @@ select{width: 90px;height: 29px;border-radius: 9px;margin-top:-5px;font-size: 14
 li.optionsel{font-weight:bold;}
 #portname,#none,#varportval,#perportval,#portval,#inport{text-align:center;width:90px}
 #none,#minvalue,#maxvalue,#tolerance,#duration,#address,#register,#funct{width:90px}
-li[id*="mnu"]:hover,li[id^=sel]:hover,li.menuitem[class*="type"]:hover{cursor:pointer;background-color:#053F95;color:#fff;font-weight:bold;}
+/*li[id*="mnu"]:hover,li[id^=sel]:hover,li.menuitem[class*="type"]:hover{cursor:pointer;background-color:#053F95;color:#fff;font-weight:bold;}*/
