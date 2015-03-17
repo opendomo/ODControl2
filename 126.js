@@ -2,7 +2,7 @@ var EOL=String.fromCharCode(10)
 function loadTemplate(tpl){
 	try {
 		if (typeof tpl == "number") tpl = templates_cmd[tpl];
-		cmds=tpl.split(EOL);
+		cmds=tpl.replace(EOL,";;").split(";;");
 		var total=cmds.length;
 		clearMenu();
 		addMenuItem("progressmenu","menuitem","Loading template",null);
@@ -23,7 +23,7 @@ function loadTemplate(tpl){
 		addMenuItem("progresserrlog","menuitem","Error log: ",ta,null);
 	} catch (e) {
 	}
-	addToolbarSaveCancelHelp(null,loadMenu);
+	addToolbarSaveCancelHelp(null,loadTemplates);
 
 	send_command("clr");
 	curr_tpl_cmd=0;

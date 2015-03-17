@@ -1,13 +1,20 @@
-JS("http://cloud.opendomo.com/odctp/list.php?ver=2.0&uid="+uid);
 function loadTemplates() {
+	JS("http://cloud.opendomo.com/odctp/list.php?ver=2.0&uid="+uid);
 	clearMenu();
-	for (var i=0;i<templates.length;i++){
-		addMenuItem("temp_"+i, "menuitem", templates[i], null, 
-			function(){loadTemplate(parseInt(this.id.split("_")[1]));});
-	}	
-	addToolbarSaveCancelHelp(function() {
-		alert("Configuration changed");
-	}, loadMenu, "net");  
+	setTimeout(function(){
+		if (typeof templates == "undefined") {
+			addMenuItem("mess","message","No internet connection");
+			addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
+		} else {
+			for (var i=0;i<templates.length;i++){
+				addMenuItem("temp_"+i, "menuitem", templates[i], null, 
+					function(){loadTemplate(parseInt(this.id.split("_")[1]));});
+			}	
+			addToolbarSaveCancelHelp(function() {
+				alert("Configuration changed");
+			}, loadMenu, "net");  
+		}
+	}, 1000);
 }
 /*setTimeout(function(){
 var p=ID("main");
