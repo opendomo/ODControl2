@@ -1,5 +1,5 @@
 function loadTemplates() {
-	JS("http://cloud.opendomo.com/odctp/list.php?ver=2.0&uid="+uid);
+	JS("http://cloud.opendomo.com/odctp/list.php?ver="+ver+"&uid="+uid);
 	clearMenu();
 	setTimeout(function(){
 		if (typeof templates == "undefined") {
