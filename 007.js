@@ -7,6 +7,7 @@ function loadODinfo() {
 		odcontrolname = p[0];
 		ver = p[2];
 		uid = p[3];
+		ID("f").innerHTML="v"+ver +" "+ uid;
 	}else{
 		console.log("Error reading ODControl version");
 		return false;
