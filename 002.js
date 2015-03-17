@@ -1,3 +1,4 @@
+var D=document; 
 function show(x){x.style.display="block";}
 function hide(x){x.style.display="none";}
 function G(tag){return D.getElementsByTagName(tag);}
