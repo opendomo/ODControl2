@@ -15,7 +15,7 @@ function sadv(){
 	if (cport==nport) document.location="./adv"; 
 	else document.location="http://"+document.location.hostname+":"+cport;
 }
-AC(ID('f'),CT("Version: "+ver+", UID: "+uid));SA(ID('f'),'href','http://opendomo.com');SC("net+show",ns);
+AC(ID('f'),CT("Version: "));SA(ID('f'),'href','http://opendomo.com');SC("net+show",ns);
 var it;
 function HME(){
 var h=ID("adv");if(!h){ID("h").innerHTML="";
