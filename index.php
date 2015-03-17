@@ -158,6 +158,10 @@ $OFF_:DVH_:OFF:PER:OFF
 				echo "mac:00:04:a3:6c:5f:37 ip:192.168.1.60 netmask:255.255.255.0 gateway:192.168.1.1 ntp:89.248.106.98 ev:255.255.255.255 webuiport:80 webcfport:80 protoport:1729 webuiaccess:any webcfaccess:any protoaccess:any";
 				break;
 				
+			case "dte show":
+				echo "years:02012 months:00005 days:00014 hours:00010 minutes:00000 seconds:00008, day:lun";
+				break;
+				  
 			case "snm":
 			case "set":
 				echo "DONE";
