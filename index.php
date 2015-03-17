@@ -159,7 +159,7 @@ $OFF_:DVH_:OFF:PER:OFF
 				break;
 				
 			case "dte show":
-				echo "years:02012 months:00005 days:00014 hours:00010 minutes:00000 seconds:00008, day:lun";
+				echo "years:02012 months:00005 days:00014 hours:00010 minutes:00000 seconds:00008, day:lun\n";
 				break;
 				  
 			case "snm":
