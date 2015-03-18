@@ -142,8 +142,8 @@ vt058:XVH_:
 vt059:XVH_:
 vt060:XVH_:
 vt061:XVH_:
-$ON__:DVH_:ON:PER:ON
-$OFF_:DVH_:OFF:PER:OFF
+\$ON__:DVH_:ON:PER:ON
+\$OFF_:DVH_:OFF:PER:OFF
 ";
 				break;		
 		

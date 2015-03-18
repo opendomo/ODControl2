@@ -1,4 +1,3 @@
-var EOL=String.fromCharCode(10)
 function loadTemplate(tpl){
 	try {
 		if (typeof tpl == "number") tpl = templates_cmd[tpl];
