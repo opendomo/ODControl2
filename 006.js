@@ -26,10 +26,16 @@ if(l){
 	l=a[0];
 	retval=a[1];
 }
-if(t=="SV"){SA(l,"title",b[4]);SA(l,"value",b[2]);}
-if(t=="TV"){
-	var tx = b[4].split(" ");
-	SA(l,"value",parseFloat(tx[1]));
+switch(t){ 
+	case "SV":
+		SA(l,"title",b[4]);SA(l,"value",b[2]);
+		break;
+	case "TV":
+		var tx = b[4].split(" ");
+		SA(l,"value",parseFloat(tx[1]));
+		break;
+	default:
+		SA(l,"class",v);
 }
 return retval;
 }

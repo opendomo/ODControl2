@@ -30,7 +30,8 @@ function ci(){
 	for(var i=0;i<a.length;i++){
 		b=a[i].split(":");
 		if(a[i]!="DONE")try{
-			AC(d,AM(b[1].substring(0,2),b[0],b[2]));
+			var k = AM(b[1].substring(0,2),b[0],b[2]);
+			AC(d,k);
 		}catch(e){}}
 	}
 function TB(i,l,f) {
