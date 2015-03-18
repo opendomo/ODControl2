@@ -11,7 +11,6 @@ function deleteLink(linkID){
    }
 }
 
-
 function loadODControlData() {
 	loadODinfo()
 	loadPortsInfo();
