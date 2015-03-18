@@ -18,16 +18,25 @@ function sadv(){
 AC(ID('f'),CT("Version: "));SA(ID('f'),'href','http://opendomo.com');SC("net+show",ns);
 var it;
 function HME(){
-var h=ID("adv");if(!h){ID("h").innerHTML="";
-TB('hme','Home','HME');
-TB('cfg','Settings','CFG');
-TB('adv','Configure','sadv');
-SA(ID("h"),"class","hme");
-}
-SEL("hme");
-clearInterval(it);ID('b').innerHTML='';it=setInterval(upd,parseInt(1));clearInterval(it);upd();it=setInterval(upd,parseInt(localStorage['frequency']));
+	var h=ID("adv");if(!h){ID("h").innerHTML="";
+	TB('hme','Home','HME');
+	TB('cfg','Settings','CFG');
+	TB('adv','Configure','sadv');
+	SA(ID("h"),"class","hme");
+	}
+	SEL("hme");
+	ID('b').innerHTML='';
+	clearInterval(it);
+	upd();
+	it=setInterval(upd,5000);
 }
 function CFG(){
-SA(ID("h"),"class","cfg");clearInterval(it);ID('b').innerHTML='';it=setInterval(upc,parseInt(1));clearInterval(it);upc();it=setInterval(upc,parseInt(localStorage['frequency']));SEL("cfg");}
+	SA(ID("h"),"class","cfg");
+	ID('b').innerHTML='';	
+	clearInterval(it);
+	upc();
+	it=setInterval(upc,5000);
+	SEL("cfg");
+}
 function ADV(){/*SEL("adv");*/SA(ID("h"),"class","hme");}
 JS("006.js");
