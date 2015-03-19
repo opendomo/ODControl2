@@ -2,7 +2,7 @@ function addToolbarSaveCancelHelp(callbacksave,callbackcancel,keyword){
 	var tbr=CE("div");
 	tbr.setAttribute("class","buttons");
 	if(callbacksave){
-		var menu_ok_caption=CT("Save changes");
+		var menu_ok_caption=CT(LBL_SAV);
 		var menu_ok=CE("a");
 		menu_ok.setAttribute("id","savetxt");
 		menu_ok.setAttribute("class","button");
@@ -11,7 +11,7 @@ function addToolbarSaveCancelHelp(callbacksave,callbackcancel,keyword){
 		tbr.appendChild(menu_ok);
 	}
 	if(callbackcancel){
-		var menu_cancel_caption=CT("Exit");
+		var menu_cancel_caption=CT(LBL_EXI);
 		var menu_cancel=CE("a");
 		menu_cancel.setAttribute("class","button");
 		menu_cancel.setAttribute("id","exittxt");

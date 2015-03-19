@@ -41,7 +41,7 @@ ODControl2 development repository
 	120 $ (literals)
 	121 $ createSCH changeODControlName setODControlName
 	122 - loadTemplates
-	123 $ addToolbarSaveCancelHelp
+	123 - addToolbarSaveCancelHelp
 	124 - cCF
 	125 - loadTemplateNextCommand
 	126 - loadTemplate

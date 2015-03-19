@@ -21,13 +21,13 @@ function setODControlName(){
 	if (name && (name.length==5)) {
 		var resp = send_command("snm+" + name);
 		if (resp.indexOf("DONE")==-1) {
-			alert("Invalid name or unsupported function");
+			alert(TXT_INVNAME);
 		} else {
 			alert("Name changed");
 			odcontrolname = name;
 			loadMenu();
 		}
 	}else{
-		alert("Invalid name");
+		alert(TXT_INVNAME);
 	}
 }
