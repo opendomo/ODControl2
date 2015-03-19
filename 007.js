@@ -1,7 +1,6 @@
 JS('008.js');
 var ver,uid;
-function loadODinfo() {
-	var v=send_command("ver");
+SC("ver",function(v){
 	var p=v.split(" ");;
 	if(p.length>2){
 		odcontrolname = p[0];
@@ -12,5 +11,4 @@ function loadODinfo() {
 		console.log("Error reading ODControl version");
 		return false;
 	}
-}
-loadODinfo();
+});
