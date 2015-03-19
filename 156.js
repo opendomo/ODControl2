@@ -15,10 +15,5 @@ var portid = 0;
 var context = "";
 
 
-// http://www.opendomo.com/wiki/index.php?title=Comandos_de_ODControl#Enlazar_puertos_.28lnk.29
-var lnktypes =    ["d",      "i",     "p", "P",     "c",      "r",      "t",        "s",    "2",     "3",    "l",   "b",    "k", "n", "N","o","f"];
-var lnktypes_desc =  ["direct", "invers","pulse", "inmediate pulse", "change", "return", "t-return", "self", "double", "triple", "long", "boot", "interlink","Up-counter", "Down-counter", "Set ON", "Set OFF"];
-
-
 
 

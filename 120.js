@@ -15,3 +15,5 @@ var MSG_NONET = "No internet connection";
 var LBL_CHNAME = "Change name";
 var I_WEE = "Weekday";
 var I_HOU = "Hourly";
+var lnktypes = ["d","i","p","P","c","r","t","s","2","3","l","b","k","n","N","o","f"];
+var lnktypes_desc = ["direct", "invers","pulse", "inmediate pulse", "change", "return", "t-return", "self", "double", "triple", "long", "boot", "interlink","Up-counter", "Down-counter", "Set ON", "Set OFF"];

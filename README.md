@@ -73,8 +73,8 @@ ODControl2 development repository
 	153 - defpn
     154 - send_command
 	155 $ grptypes_desc trgtypes_desc tags_desc analogtype_desc
-	156 $ lnktypes_desc
+	156 - .
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI
-	158 $ VAR_HI, PER_HI 
+	158 $ VAR_HI PER_HI 
 	160 $ .
 
