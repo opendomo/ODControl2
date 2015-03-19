@@ -4,13 +4,13 @@ var i=curr_tpl_cmd;
 if(i==-1||i>=cmds.length){
 	clearTimeout(current_template_timer);
 	if(failedcommands!=0){
-		alert("Configuration loaded with errors :(");
+		alert(MSG_LERR);
 		var e=ID("errlog");
 		for(var i=0;i<errorlog.length;++i)
 			e.value+=errorlog[i]+"\n";
 		console.log(errorlog);
 	}else{
-		alert("Configuration loaded!");
+		alert(MSG_SUCC);
 		loadMenu();
 		return false;
 	}

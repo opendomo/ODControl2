@@ -3,16 +3,14 @@ function loadTemplates() {
 	clearMenu();
 	setTimeout(function(){
 		if (typeof templates == "undefined") {
-			addMenuItem("mess","message","No internet connection");
+			addMenuItem("mess","message",MSG_NONET);
 			addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
 		} else {
 			for (var i=0;i<templates.length;i++){
 				addMenuItem("temp_"+i, "menuitem", templates[i], null, 
 					function(){loadTemplate(parseInt(this.id.split("_")[1]));});
 			}	
-			addToolbarSaveCancelHelp(function() {
-				alert("Configuration changed");
-			}, loadMenu, "net");  
+			addToolbarSaveCancelHelp(null, loadMenu, "net");  
 		}
 	}, 1000);
 }

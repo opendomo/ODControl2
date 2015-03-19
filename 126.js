@@ -4,22 +4,18 @@ function loadTemplate(tpl){
 		cmds=tpl.replace(EOL,";;").split(";;");
 		var total=cmds.length;
 		clearMenu();
-		addMenuItem("progressmenu","menuitem","Loading template",null);
+		addMenuItem("progressmenu","menuitem",LBL_LOAD,null);
 		addMenuItem("progressbarm","menuitem","",createProgressField("progress",0,total));
-
-		addMenuItem("progresstotalm","menuitem","Total commands",
-				cIF("progresstotal","text",total));
-		addMenuItem("progresscurrentm","menuitem","Executed",
-				cIF("progresscurrent","text","0"));
-		addMenuItem("progresserrm","menuitem","Errors",
-				cIF("progresserr","text","0"));
+		addMenuItem("progresstotalm","menuitem",LBL_TCM, cIF("progresstotal","text",total));
+		addMenuItem("progresscurrentm","menuitem",LBL_EXE, cIF("progresscurrent","text","0"));
+		addMenuItem("progresserrm","menuitem",LBL_ERR, cIF("progresserr","text","0"));
 
 		var ta=CE("textarea");
 		ta.setAttribute("id", "errlog");
 		ta.setAttribute("class", "err");
 		ta.setAttribute("resize","none");
 		ta.setAttribute("readonly","");
-		addMenuItem("progresserrlog","menuitem","Error log: ",ta,null);
+		addMenuItem("progresserrlog","menuitem",LBL_LOG,ta,null);
 	} catch (e) {
 	}
 	addToolbarSaveCancelHelp(null,loadTemplates);

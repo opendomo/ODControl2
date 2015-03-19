@@ -1,0 +1,10 @@
+var LBL_CFG = "Configuration: ";
+var TXT_EXP = "Device names, dates, passwords and network configuration are not included ";
+var LBL_LOAD = "Loading template";
+var LBL_TCM = "Total commands";
+var LBL_EXE = "Executed";
+var LBL_ERR = "Errors";
+var LBL_LOG = "Error log: ";
+var MSG_LERR = "Configuration loaded with errors :(";
+var MSG_SUCC = "Configuration loaded!";
+var MSG_NONET = "No internet connection";

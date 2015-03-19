@@ -38,15 +38,15 @@ ODControl2 development repository
 	117 $ getPortTypeDesc isvisible isinconfig isenabled isdigital isanalog isvirtual isType
 	118 $ createZTG
 	119 $ createTRG
-	120 (empty)
+	120 $ (literals)
 	121 $ createSCH changeODControlName setODControlName
-	122 $ loadTemplates
+	122 - loadTemplates
 	123 $ addToolbarSaveCancelHelp
 	124 - cCF
-	125 $ loadTemplateNextCommand
-	126 $ loadTemplate
+	125 - loadTemplateNextCommand
+	126 - loadTemplate
 	127 - showfrm clearMenu createProgressField
-	128 $ exportConfiguration
+	128 - exportConfiguration
 	129 - loadLinksInfo initmsg
 	130 - my_confirm hidealert
     131 - getPortId errorHandler showHidePanel
