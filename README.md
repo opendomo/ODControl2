@@ -53,7 +53,7 @@ ODControl2 development repository
     133 - loadPortsInfo
 	134 - vportExtractConfig
 	135 $ loadNetworkConfig_menu
-	136 $ loadNetworkConfig
+	136 - loadNetworkConfig
 	137 $ loadLinksMenu_menu
 	138 - loadLinksMenu
 	139 - extractConfiguration_switch
