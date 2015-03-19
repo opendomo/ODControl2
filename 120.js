@@ -1,6 +1,7 @@
 var LBL_CFG = "Configuration: ";
 var TXT_EXP = "Device names, dates, passwords and network configuration are not included ";
 var TXT_INVNAME = "Invalid name or unsupported function";
+var TXT_OKNAME = "Name successfully changed";
 var LBL_LOAD = "Loading template";
 var LBL_TCM = "Total commands";
 var LBL_EXE = "Executed";
@@ -11,3 +12,6 @@ var LBL_EXI = "Exit";
 var MSG_LERR = "Configuration loaded with errors :(";
 var MSG_SUCC = "Configuration loaded!";
 var MSG_NONET = "No internet connection";
+var LBL_CHNAME = "Change name";
+var I_WEE = "Weekday";
+var I_HOU = "Hourly";

@@ -39,7 +39,7 @@ ODControl2 development repository
 	118 $ createZTG
 	119 $ createTRG
 	120 $ (literals)
-	121 $ createSCH changeODControlName setODControlName
+	121 - createSCH changeODControlName setODControlName
 	122 - loadTemplates
 	123 - addToolbarSaveCancelHelp
 	124 - cCF

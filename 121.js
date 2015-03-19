@@ -2,7 +2,7 @@ function createSCH(){
 	clearMenu();
 	addMenuItem("label","helpitem",SCH_HI);
 	var v=ports[portid][6].split(" ")[0];
-	addMenuItem("cperport","menuitem","Type",cSF("scheduletype",v,["w","h"],["Weekday","Hourly"]));
+	addMenuItem("cperport","menuitem","Type",cSF("scheduletype",v,["w","h"],[I_WEE,I_HOU]));
 	addToolbarSaveCancelHelp(function (){
 		send_command("sch+"+ ports[portid][0]+"+"+scheduletype.value);
 		loadPortsInfo(ports[portid][0]);
@@ -11,7 +11,7 @@ function createSCH(){
 }  
 function changeODControlName(){
 	clearMenu();
-	addMenuItem("setodcname","menuitem", "Change name",
+	addMenuItem("setodcname","menuitem", LBL_CHNAME,
 			cIF("ODControlName","text",odcontrolname,"[a-z0-9]{5}"));
 	addToolbarSaveCancelHelp(setODControlName,loadMenu);
 }
@@ -23,7 +23,7 @@ function setODControlName(){
 		if (resp.indexOf("DONE")==-1) {
 			alert(TXT_INVNAME);
 		} else {
-			alert("Name changed");
+			alert(TXT_OKNAME);
 			odcontrolname = name;
 			loadMenu();
 		}
