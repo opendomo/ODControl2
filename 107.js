@@ -12,7 +12,7 @@ function deleteLink(linkID){
 }
 
 function loadODControlData() {
-	loadODinfo()
+	//loadODinfo()
 	loadPortsInfo();
 	loadLinksInfo();
 	return true;
