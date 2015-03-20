@@ -7,27 +7,27 @@ function loadMenu(){
 }
 
 function loadConsole(){
-   clearMenu();
-   cmd = cIF("command","text","",null);
-   cmd.onkeyup = function(e) {
-      if (e.keyCode == 13) {
-         var c = ID("command");
-         var t = ID("tacmd");
-         var resp = send_command(c.value);
+	clearMenu();
+	cmd = cIF("command","text","",null);
+	cmd.onkeyup = function(e) {
+		if (e.keyCode == 13) {
+			var c = ID("command");
+			var t = ID("tacmd");
+			var resp = send_command(c.value);
 			t.value=resp;
 			c.value="";
-         console.log(resp);
-      }
-   };
-   addMenuItem("cmd","menuitem", "Execute command", cmd);
+			console.log(resp);
+		}
+	};
+	addMenuItem("cmd","menuitem", "Execute command", cmd);
 
-   var ta= document.createElement("textarea");
-   ta.setAttribute("class", "tpl");
-   ta.setAttribute("id","tacmd");
-   ta.setAttribute("resize","none");
-   ta.setAttribute("readonly","");
-   ta.appendChild(document.createTextNode(""));
-   addMenuItem("startsess","menuitem","",ta,null);
+	var ta= document.createElement("textarea");
+	ta.setAttribute("class", "tpl");
+	ta.setAttribute("id","tacmd");
+	ta.setAttribute("resize","none");
+	ta.setAttribute("readonly","");
+	ta.appendChild(document.createTextNode(""));
+	addMenuItem("startsess","menuitem","",ta,null);
 	addToolbarSaveCancelHelp(null,loadMenu);
 	ID("command").focus();
 }
