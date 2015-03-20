@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # v2.0.0
-*
+
 CACHE:
 200.svg
 201.svg
@@ -12,6 +12,6 @@ CACHE:
 207.svg
 
 NETWORK:
-002.js
+*
 
 FALLBACK:
