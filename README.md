@@ -18,7 +18,7 @@ ODControl2 development repository
     063 - idh idw
     064 - cWV
     065 - cSF
-	099 (empty)
+	099 - appcache
 	100 $ (literals)
     101 - createTTG
     102 - changeTime

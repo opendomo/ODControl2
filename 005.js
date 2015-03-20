@@ -1,6 +1,6 @@
 var cport=81,nport=80;function ns(c){
-	var e = c.srcElement.responseText;
-	var s=e.split(" ");
+	var e = c.srcElement?c.srcElement:c.target;
+	var s=e.responseText.split(" ");
 	for(var i=0;i<s.length;i++){
 		var k=s[i].split(":");
 		if(k&&k[0]=="webcfport"){
