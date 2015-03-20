@@ -19,7 +19,7 @@ function loadConsole(){
 			console.log(resp);
 		}
 	};
-	addMenuItem("cmd","menuitem", "Execute command", cmd);
+	addMenuItem("cmd","menuitem", LBL_EXE, cmd);
 
 	var ta= document.createElement("textarea");
 	ta.setAttribute("class", "tpl");

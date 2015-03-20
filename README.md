@@ -18,16 +18,17 @@ ODControl2 development repository
     063 - idh idw
     064 - cWV
     065 - cSF
-    100 - createTTG
-    101 - changeTime
-    102 - ID CE CT pad validate_field
-    103 - setLDate setIntervalRefreshDate saveNTP saveDateTime
-    104 - loadCSSfile loadJSfile getPortListByType
-    105 - loadJSfile getPortListByType
+	099 (empty)
+	100 $ (literals)
+    101 - createTTG
+    102 - changeTime
+    103 - ID CE CT pad validate_field
+    104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
+    105 - loadCSSfile loadJSfile getPortListByType
     106 - clearConfiguration ptoREST dteToStr
     107 - loadODControlData deleteLink 
     108 - HME2 addMenuItem
-    109 $ loadMenu loadConsole
+    109 - loadMenu loadConsole
     110 - cSF cIF 
     111 - loadPortsMenu
     112 $ f createVP 
@@ -75,6 +76,7 @@ ODControl2 development repository
 	155 $ grptypes_desc trgtypes_desc tags_desc analogtype_desc
 	156 - .
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI
-	158 $ VAR_HI PER_HI 
+	158 $ VAR_HI PER_HI
+	159 (empty)
 	160 $ .
 

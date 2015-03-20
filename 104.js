@@ -1,39 +1,21 @@
-
-function loadCSSfile(filename){
-   var fileref=document.createElement("link");
-   fileref.setAttribute("rel", "stylesheet");
-   fileref.setAttribute("type", "text/css");
-   fileref.setAttribute("href", filename);
-   document.getElementsByTagName("head")[0].appendChild(fileref);
-}  
-
-
-function loadJSfile(filename){
-   var fileref=document.createElement('script');
-   fileref.setAttribute("type","text/javascript");
-   fileref.setAttribute("src", filename);
-   document.getElementsByTagName("head")[0].appendChild(fileref);
-}  
-
-
-function getPortListByType(t){
-   var pt = "";
-   if (t==undefined) t=[];
-   var ret = [];
-   for(var i = 0; i < ports.length; i++) {
-      pt = ports[i][1];
-      pn = ports[i][0];
-      if (pn[0]!="$" && pt!="XV"){
-         if (t.length == 0){
-            ret.push(pn);
-         } else {
-            for (var k=0;k<t.length;k++){
-               if (pt==t[k]) {
-                  ret.push(pn);
-               }  
-            }     
-         }  
-      }  
-   }  
-   return ret;
-} 
+function setLDate(id)
+{var dte=send_command("dte+show").split(" ");
+var d=dteToStr(dte);
+ID(id).innerHTML="Current system date: "+d;
+}
+function setIntervalRefreshDate(id){
+setLDate(id);
+var intv=setInterval(function(){setLDate(id);},10000);
+return intv;
+}
+function saveNTP(){send_command("dte+ntp");alert("NTP configured!");}
+function saveDateTime(v){
+var rx=/^([0-9]{2})\/([0-9]{2})\/([0-9]{4}) ([0-9]{2}):([0-9]{2}):([0-9]{2})$/g;
+var m=rx.exec(v);
+if(m==null||m.length!=7)
+{alert("Expected format: dd/mm/yyyy HH:MM:SS!");return false;}
+var cmd="dte+"+m[3]+m[2]+m[1]+m[4]+m[5]+m[6];
+send_command(cmd);
+alert("Date configured");
+return true;
+}
