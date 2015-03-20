@@ -1,5 +1,5 @@
 Options +FollowSymLinks
-
+AddType text/cache-manifest .appcache
 RewriteEngine On
 RewriteRule ^(s.css)$ s.css
 RewriteRule ^([a-zA-Z0-9+\-\_\*]*)$ index.php?cmd=$1
