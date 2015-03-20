@@ -4,10 +4,10 @@ function createTTG(){
 		var p=ports[portid][6].split(" ");
 		addMenuItem("label","helpitem",TTG_HI);
 		var l=getPortListByType([]);
-		addMenuItem("mnugrp", "menuitem", "Port",cSF("outport", p[1], l));
+		addMenuItem("mnugrp", "menuitem", LBL_PORT,cSF("outport", p[1], l));
 		l.unshift(["off"]);
 		l.unshift(["on"]);
-		addMenuItem("mnuval", "menuitem", "Value",cSF("portval", p[2],l));
+		addMenuItem("mnuval", "menuitem", LBL_VAL,cSF("portval", p[2],l));
 		addToolbarSaveCancelHelp(function() {
 			var pr = ports[portid][0];
 			var pa = document.getElementById("outport");
@@ -15,9 +15,9 @@ function createTTG(){
 			var command="ttg+"+pr+"+20130101000000+"+pa.value+"+"+pv.value;
 			var resp=send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				alert("Error creating the trigger: "+ resp);
+				alert(ERR_CTG+ resp);
 			} else {
-				alert("You can assign the proper date from the configuration panel");
+				alert(MSG_CTG);
 				loadPortsInfo(ports[portid][0]);
 				displayPortDetails(portid);
 			}
