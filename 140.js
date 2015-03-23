@@ -3,12 +3,12 @@ extractConfiguration = function (){
 
 	for (var i=0;i<ports.length;i++) {
 		  if ((defpn[i]!=ports[i][0]) && (ports[i][0].indexOf("$")==-1) ){
-			res = res + "lbl "+defpn[i]+" "+ports[i][0] + "\\n";
+			res = res + "lbl "+defpn[i]+" "+ports[i][0] + EOL;
 		}
 	}
 	for (var i=0;i<ports.length;i++) {
 		  var tag = ports[i][2];
-		  if (tag!="_") res = res + "tag "+ ports[i][0] + " " +tag + "\\n";	
+		  if (tag!="_") res = res + "tag "+ ports[i][0] + " " +tag + EOL;	
 	 }
 
 	for (i=0;i<ports.length;i++) {
@@ -30,7 +30,7 @@ extractConfiguration = function (){
 		  var p1 = mylinks[i][0];
 		  var p2 = mylinks[i][1];
 		  if (p1 && p2) {
-				res = res + "lnk " + p1 + " " + p2 + " " + mylinks[i][2] + "\\n";
+				res = res + "lnk " + p1 + " " + p2 + " " + mylinks[i][2] + EOL;
 		  }
 	 }
 	 return res;
