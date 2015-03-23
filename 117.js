@@ -1,10 +1,10 @@
 function getPortTypeDesc(i)
 {
-	if(ports[i][1]=="DI") return "Digital Input";
-	else if(ports[i][1]=="DO") return "Digital Output";
-	else if(ports[i][1]=="AO") return "Analog Output";
-	else if(ports[i][1]=="AI") return "Analog Input";
-	else return "Virtual Port";
+	if(ports[i][1]=="DI") return LBL_DI;
+	else if(ports[i][1]=="DO") return LBL_DO;
+	else if(ports[i][1]=="AO") return LBL_AO;
+	else if(ports[i][1]=="AI") return LBL_AI;
+	else return LBL_VP;
 }
 function isvisible(id) {
    return ((ports[id][3].indexOf("M")>0)||(ports[id][3].indexOf("C")>0));
