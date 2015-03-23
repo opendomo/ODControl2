@@ -3,12 +3,9 @@ function createGRP(){
 		clearMenu();
 		var a=ports[portid][6].split(" ");
 		addMenuItem("label","helpitem",GRP_HI);
-		addMenuItem("grp","menuitem","Port A",
-				cSF("inport",a[0],getPortListByType([])));
-		addMenuItem("grp","menuitem","Operation",
-				cSF("type",a[2],grptypes,grptypes_desc));
-		addMenuItem("grp","menuitem","Port B",
-				cSF("outport",a[1],getPortListByType([])));
+		addMenuItem("grp","menuitem",LBL_PA,cSF("inport",a[0],getPortListByType([])));
+		addMenuItem("grp","menuitem",LBL_OP,cSF("type",a[2],grptypes,grptypes_desc));
+		addMenuItem("grp","menuitem",LBL_PB,cSF("outport",a[1],getPortListByType([])));
 		addToolbarSaveCancelHelp(function() {
 			var pr=ports[portid][0];
 			var pa=document.getElementById("inport");
@@ -17,7 +14,7 @@ function createGRP(){
 			command="grp+" + pr + "+" + pa.value + "+" + pb.value + "+" + grpt.value;
 			var resp=send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				alert("Error creating the group: "+ resp);
+				alert(ERR_GRP + resp);
 			} else {
 				loadPortsInfo(ports[portid][0]);
 				displayPortDetails(portid);

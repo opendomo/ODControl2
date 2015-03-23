@@ -8,3 +8,7 @@ var LBL_TOL="Tolerance";
 var LBL_NAM="Name";
 var LBL_REMD="Remote device";
 var LBL_REMP="Remote port";
+var LBL_PA="Port A";
+var LBL_PB="Port B";
+var LBL_OP="Operation";
+var ERR_GRP="Error creating the group: ";
