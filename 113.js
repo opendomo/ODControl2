@@ -2,7 +2,7 @@ function createRDV(){
    try { 
       clearMenu();
 		addMenuItem("label","helpitem",RDV_HI);
-      addMenuItem("cperport","menuitem", "Name", 
+      addMenuItem("cperport","menuitem", LBL_NAM, 
             cIF("varportval","text",ports[portid][0],"[a-z0-9]{5}"));
       addToolbarSaveCancelHelp(function (){
          var va = ID("varportval");

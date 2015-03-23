@@ -5,3 +5,6 @@ var MSG_CTG="You can assign the proper date from the configuration panel";
 var ERR_CTG="Error creating the trigger: ";
 var LBL_ANA="Analog port";
 var LBL_TOL="Tolerance";
+var LBL_NAM="Name";
+var LBL_REMD="Remote device";
+var LBL_REMP="Remote port";

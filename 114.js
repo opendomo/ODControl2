@@ -12,13 +12,11 @@ function createRPT(){
 		}
 		var a=ports[portid][6].split(" ");
 		var r=/[a-zA-Z0-9]{5}/g;
-		if(!r.test(a[1]) || typeof something === "undefined")
+		if(!r.test(a[1]) || typeof something === "undefined") 
 			rpn="do000";
 		addMenuItem("label","helpitem",RPT_HI);
-		addMenuItem("remdev","menuitem","Remote device",
-			cSF("odcontrol",a[0],rdv,rdv));
-		addMenuItem("remport","menuitem","Remote port name",
-			cIF("inport","text",a[1]));
+		addMenuItem("remdev","menuitem",LBL_REMD, cSF("odcontrol",a[0],rdv,rdv));
+		addMenuItem("remport","menuitem",LBL_REMP, cIF("inport","text",a[1]));
 		addToolbarSaveCancelHelp(function (){
 			var pr=ports[portid][0];
 			var od=ID("odcontrol");
@@ -30,5 +28,3 @@ function createRPT(){
 			}
 		},function(){displayPortDetails(portid);},"rpt");
 }
-
-
