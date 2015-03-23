@@ -22,3 +22,4 @@ var LBL_SECD="Seconds";
 var LBL_ACT="Action to execute";
 var LBL_UPDP="Update port";
 var LBL_WVAL="With value";
+var LBL_COND="Condition";
