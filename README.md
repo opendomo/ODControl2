@@ -38,7 +38,7 @@ ODControl2 development repository
 	116 - createDTG
 	117 - getPortTypeDesc isvisible isinconfig isenabled isdigital isanalog isvirtual isType
 	118 - createZTG
-	119 $ createTRG
+	119 - createTRG
 	120 $ (literals)
 	121 - createSCH changeODControlName setODControlName
 	122 - loadTemplates
@@ -53,7 +53,7 @@ ODControl2 development repository
     131 - getPortId errorHandler showHidePanel
     133 - loadPortsInfo
 	134 - vportExtractConfig
-	135 $ loadNetworkConfig_menu
+	135 - loadNetworkConfig_menu
 	136 - loadNetworkConfig
 	137 $ loadLinksMenu_menu
 	138 - loadLinksMenu
