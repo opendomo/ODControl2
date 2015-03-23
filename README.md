@@ -35,7 +35,7 @@ ODControl2 development repository
 	113 - createRDV
 	114 - createRPT
 	115 - createGRP
-	116 $ createDTG
+	116 - createDTG
 	117 $ getPortTypeDesc isvisible isinconfig isenabled isdigital isanalog isvirtual isType
 	118 $ createZTG
 	119 $ createTRG

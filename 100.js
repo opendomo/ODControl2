@@ -12,3 +12,4 @@ var LBL_PA="Port A";
 var LBL_PB="Port B";
 var LBL_OP="Operation";
 var ERR_GRP="Error creating the group: ";
+var DTG_HI="You can assign the proper date from the configuration panel";
