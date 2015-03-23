@@ -4,7 +4,7 @@ function extractConfiguration_switch(res, i, pType, pName, pPage){
 			res = res + "cfg " + pName + " di" + pPage + EOL;
 			break;
 		case "DO":
-			res = res + "cfg " + pName + " do" + pPage + EOL";
+			res = res + "cfg " + pName + " do" + pPage + EOL;
 			break;
 		case "DX":
 			res = res + "cfg " + pName + " x" + pPage + EOL;
