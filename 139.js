@@ -25,7 +25,7 @@ function extractConfiguration_switch(res, i, pType, pName, pPage){
 		case "XV":
 			break;
 		default:
-			res = res + "cfg " + pName + " d" + pPage + "EOL";
+			res = res + "cfg " + pName + " d" + pPage + EOL;
 			res = res + vportExtractConfig(ports[i]);
 			break;
 	}

@@ -18,3 +18,7 @@ var LBL_DO="Digital Output";
 var LBL_AI="Analog Input";
 var LBL_AO="Analog Output";
 var LBL_VP="Virtual port";
+var LBL_SECD="Seconds";
+var LBL_ACT="Action to execute";
+var LBL_UPDP="Update port";
+var LBL_WVAL="With value";

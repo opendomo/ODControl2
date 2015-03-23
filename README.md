@@ -37,7 +37,7 @@ ODControl2 development repository
 	115 - createGRP
 	116 - createDTG
 	117 - getPortTypeDesc isvisible isinconfig isenabled isdigital isanalog isvirtual isType
-	118 $ createZTG
+	118 - createZTG
 	119 $ createTRG
 	120 $ (literals)
 	121 - createSCH changeODControlName setODControlName
