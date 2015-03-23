@@ -31,7 +31,7 @@ ODControl2 development repository
     109 - loadMenu loadConsole
     110 - cSF cIF 
     111 - loadPortsMenu
-    112 $ f createVP 
+    112 - f createVP 
 	113 $ createRDV
 	114 $ createRPT
 	115 $ createGRP

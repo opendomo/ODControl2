@@ -9,11 +9,11 @@ function createVP(cmd){
 clearMenu();
 var j=portid;
 addMenuItem("label","helpitem",cmd=="var"?VAR_HI:PER_HI);
-addMenuItem("da","menuitem","Analog port",cCF("analog",isType("A")),f);
+addMenuItem("da","menuitem",LBL_ANA,cCF("analog",isType("A")),f);
 var v=ports[j][4];
-addMenuItem("s_p","menuitem","Value",cSF("sp",v,["ON","OFF"]));
-addMenuItem("i_p","menuitem","Value",cIF("ip","number",parseInt(v)));
-addMenuItem("toler","menuitem","Tolerance",cIF("tol","number",parseInt(ports[j][7])));
+addMenuItem("s_p","menuitem",LBL_VAL,cSF("sp",v,["ON","OFF"]));
+addMenuItem("i_p","menuitem",LBL_VAL,cIF("ip","number",parseInt(v)));
+addMenuItem("toler","menuitem",LBL_TOL,cIF("tol","number",parseInt(ports[j][7])));
 var s=ID("sp");
 var i=ID("ip");
 var t=ID("tol");
