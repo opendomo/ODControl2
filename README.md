@@ -7,8 +7,8 @@ loading times.
 ## Range reorganization
 To optimize page load, files are organized in ranges:
 
- 1. Control interface: JS [10-99] CSS []
- 2. Configuration tools: JS [100-160] CSS []
+ 1. Control interface: JS [050-099] CSS [020-039]
+ 2. Configuration tools: JS [100-160] CSS [020-039]
  3. All: SVG [090-098], Manifest [099]
 
 
