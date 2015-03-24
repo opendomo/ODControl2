@@ -13,9 +13,7 @@ height: auto;
 border-radius: 10px;
 padding: 0px;
 margin: 0px;
-border-top-width: 1px;
-border-top-style: solid;
-border-top-color: white;
+border-top: 1px solid white;
 background: rgb(226, 226, 226);
 }
 #alertbox h1 {

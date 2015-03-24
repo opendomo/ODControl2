@@ -1,5 +1,16 @@
 # ODControl2
-ODControl2 development repository
+This is the development repository for ODControl2 project, and it contains 
+all the files used in the web interface and embedded configuration tools.
+Each file size limit is 1010Bytes, so it's crucial to optimize size and 
+loading times.
+
+## Range reorganization
+To optimize page load, files are organized in ranges:
+
+ 1. Control interface: JS [10-99] CSS []
+ 2. Configuration tools: JS [100-160] CSS []
+ 3. All: SVG [090-098], Manifest [099]
+
 
 ## Javascript index
 
