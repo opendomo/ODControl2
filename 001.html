@@ -1,15 +1,11 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html manifest="099.appcache">
 <head><title>ODControl2</title>
 <meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
 <meta name=apple-mobile-web-app-capable content=yes/>
 <link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
-<link rel=stylesheet href=020.css />
-<script>
-function LA(){for(var i=100;i<=160;i++)JS(i+'.js');}
-</script>
 </head>
-<body onload="LA()">
+<body>
 <div id='main'>
 <div class='t'>
 <img class='tr' src='090.svg'/>
@@ -23,6 +19,12 @@ function LA(){for(var i=100;i<=160;i++)JS(i+'.js');}
 <img class='to' src='096.svg'/>
 </div>
 <div id='h'></div><ul id='b'><li id='loading_cf'></li></ul><a target='new' id='f'></a></div>
-<script src='002.js'></script>
+<script>
+function LA(){
+	for(var i=51;i<=65;i++)JS('0'+i+'.js');
+	for(var i=20;i<=29;i++)CSS('0'+i+'.css');
+	for(var i=100;i<=160;i++)JS(i+'.js');
+}
+</script>
 </body>
 </html>
