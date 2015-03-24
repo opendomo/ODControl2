@@ -23,4 +23,7 @@ window.onload=function(){
 			console.log("Error reading ODControl version");
 		}
 	});	
+	var p=location.port;
+	if(p=="")p=80;
+	if(p==nport)HME();else ADV();	
 }
