@@ -10,7 +10,6 @@ var cport=81,nport=80;function ns(c){
 			nport=parseInt(k[1]);}
 	}
 }
-	
 function sadv(){
 	if (cport==nport) document.location="./adv"; 
 	else document.location="http://"+document.location.hostname+":"+cport;

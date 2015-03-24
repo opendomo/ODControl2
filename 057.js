@@ -1,4 +1,3 @@
-JS('008.js');
 var ver,uid;
 SC("ver",function(v){
 	try {

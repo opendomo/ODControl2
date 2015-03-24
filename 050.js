@@ -17,5 +17,5 @@ function SEL(x){
 	var e=document.querySelector("a#"+catSel);
 	e.style.backgroundColor="#053f95";
 }
-for(var i=51;i<=99;i++)JS('0'+i+'.js');
+for(var i=51;i<=65;i++)JS('0'+i+'.js');
 for(var i=20;i<=39;i++)CSS('0'+i+'.css');

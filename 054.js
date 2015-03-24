@@ -39,4 +39,3 @@ function TB(i,l,f) {
 	AC(ID(i),CT(l));
 	ID(i).href='javascript:'+f+'();';
 }
-JS("005.js");
