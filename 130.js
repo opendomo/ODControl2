@@ -1,7 +1,7 @@
 function my_confirm(text,callback_txt) {
 	var a = initmsg();
 	var b = ID("alertbgnd");
-	a.innerHTML = "<h1>" + LBL_CFM + "</h1>"
+	a.innerHTML = "<h1>" + LBL_CFM + "</h1>" +
 		"<p>" + text + "</p>" +
 		"<button onclick='hidealert()'>"+LBL_CANCEL+"</button>" + 
 		"<button onclick=\"" + callback_txt + "\" >"+LBL_OK+"</button>";
