@@ -1,4 +1,6 @@
 var cport=81,nport=80;
+function TB(i,l,f) {AC(ID('h'),CE('a','cat',i));AC(ID(i),CT(l));ID(i).href='javascript:'+f+'();';}
+function RL(){D.location.reload();}
 function ns(c){
 	var e = c.srcElement?c.srcElement:c.target;
 	var s=e.responseText.split(" ");
