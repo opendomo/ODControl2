@@ -2,7 +2,6 @@ function AJ(){return new XMLHttpRequest();}
 function upd(){SC("lsc+hme",ci);}
 function upc(){SC("lsc+cfg",ci);}
 function M(i,c,t,r){var l=ID(t)?ID(t):CE("li",c,i);AC(l,CT(t));AC(l,r);return l;}
-function ID(id){return D.getElementById(id);}
 function CT(t){return D.createTextNode(t);}
 function SC(c,f){
 console.log(c);var x=AJ();

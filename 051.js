@@ -1,4 +1,5 @@
-var cport=81,nport=80;function ns(c){
+var cport=81,nport=80;
+function ns(c){
 	var e = c.srcElement?c.srcElement:c.target;
 	var s=e.responseText.split(" ");
 	for(var i=0;i<s.length;i++){

@@ -3,7 +3,8 @@ function SA(n,a,v){n.setAttribute(a,v);return n;}
 function AC(p,c){p.appendChild(c);}
 function CE(t,c,i){var e=D.createElement(t); if(c&&c!='')SA(e,'class',c);if(i&&i!='')SA(e,'id',i); return e;}
 function JS(n){var f=CE('script');SA(f,'type','text/javascript');SA(f,'src', n);AC(G('head')[0],f);}
-TB('adv','Advanced','adv');
+
+AC(ID('f'),CT("Version: "));SA(ID('f'),'href','http://opendomo.com');SC("net+show",ns);
 
 function adv(){
 clearTimeout(it);
