@@ -32,8 +32,9 @@ function ci(){
 		if(a[i]!="DONE")try{
 			var k = AM(b[1].substring(0,2),b[0],b[2]);
 			AC(d,k);
-		}catch(e){}}
+		}catch(e){}
 	}
+}
 function TB(i,l,f) {
 	AC(ID('h'),CE('a','cat',i));
 	AC(ID(i),CT(l));
