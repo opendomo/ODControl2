@@ -7,8 +7,8 @@ loading times.
 ## Range reorganization
 To optimize page load, files are organized in ranges:
 
- 1. Control interface: JS [050-099] CSS [020-039]
- 2. Configuration tools: JS [100-160] CSS [020-039]
+ 1. Control interface: JS [050-065] CSS [020-029]
+ 2. Configuration tools: JS [100-160] CSS [020-029]
  3. All: SVG [090-098], Manifest [099]
 
 
@@ -23,6 +23,16 @@ To optimize page load, files are organized in ranges:
     008 - TB RL
     009 - G SA AC CE JS
     010 - adv
+	
+	
+    052 - show hide G SA AC CE JS RB SEL
+    053 - RL
+    054 - AJ upd upc M ID CT SC V n ci TB
+    055 - ns sadv HME CFG ADV
+    056 - AM SV
+    057 - loadODinfo
+    058 - TB RL
+    059 - G SA AC CE JS adv
     060 - cAV cDV cDI cAI 
     061 - cCV
     062 - cSV showSCH

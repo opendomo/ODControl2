@@ -43,4 +43,3 @@ function SV(p,v){SC("set+"+p+"+"+v,n);}
 var p=location.port;
 if(p=="")p=80;
 if(p==nport)HME();else ADV();
-JS('007.js');
