@@ -47,4 +47,5 @@ setTimeout(function(){
 		TB('adv','Configure','ADV');
 		SA(ID("h"),"class","hme");
 	}
+	if (typeof loadMenu == "function") loadMenu();
 },500);
