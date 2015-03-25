@@ -1,38 +1,30 @@
-function G(tag){return D.getElementsByTagName(tag);}
-function SA(n,a,v){n.setAttribute(a,v);return n;}
-function AC(p,c){p.appendChild(c);}
-function CE(t,c,i){var e=D.createElement(t); if(c&&c!='')SA(e,'class',c);if(i&&i!='')SA(e,'id',i); return e;}
-function JS(n){var f=CE('script');SA(f,'type','text/javascript');SA(f,'src', n);AC(G('head')[0],f);}
-function adv(){
-	clearTimeout(it);
-	loadODControlData();
-	loadMenu();
-}
-
-window.onload=function(){
-	SA(ID('f'),'href','http://opendomo.com');
-	SC("net+show",ns);
-	SC("ver",function(v){
-		try {
-			var p=v.target.responseText.split(" ");;
-			odcontrolname = p[0];
-			ver = p[2];
-			uid = p[3];
-			ID("f").innerHTML="v"+ver +" "+ uid;
-		}catch(e){
-			console.log("Error reading ODControl version");
-		}
-	});	
-	var h=ID("adv");
-	if(!h){ID("h").innerHTML="";
-	TB('hme',MNU_HME,'HME');
-	TB('cfg',MNU_SET,'CFG');
-	TB('adv',MNU_ADV,'ADV');
-	SA(ID("h"),"class","hme");
-	}
-	
-	var p=location.port;
-	if(p=="")p=80;
-	if(p==nport)HME();else ADV();	
-	
+function cWV(n,v){
+var a=b[4].split(" ");
+var rx=/(...)(..)(..)(..)/g;
+var m=rx.exec(a[0]);
+var r=CE("input","txt",n); 
+SA(r,"type","text");
+SA(r,"class","hour");
+SA(r,"value",m[2]+":"+m[3]+":"+m[4]);
+AC(r,CT(v));
+var j=CE("input","txt",n); 
+SA(j,"type","button");
+SA(j,"value","Save");
+SA(j,"class","save");
+AC(j,CT(v));
+var s=cSF(n,m[1],["sun","mon","tue","wed","thu","fri","sat"],["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]);
+SA(s,"class","wday");
+AC(j,CT(v));
+var l=ID(n);
+if(!l)l=CE("li","AI","li");
+AC(l,CT(n));
+AC(l,j);
+AC(l,r);
+AC(l,s);
+j.addEventListener("click",function(){
+var day=s.value;
+var hour=r.value.replace(/:/g,"");
+SC("set+"+n+"+"+day+hour,function(e){});
+});
+return [r,l];
 }
