@@ -11,14 +11,4 @@ var mainMenu = [
    {id:"mnusavet", name:"Export configuration",callback:exportConfiguration},
    {id:"mnuconsl", name:"Console", callback: loadConsole}
 ];
-/*
-var catSel="hme";
-clearTimeout(it);
-loadODControlData();
 loadMenu();
-var adv=ID("adv");
-if(!adv){
-	TB('hme2','Exit from ODC Configurator','HME2');
-	TB('back','Go to main menu','loadMenu');
-}
-*/

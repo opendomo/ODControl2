@@ -11,3 +11,15 @@ function cSF(id,value,array_val,array_desc) {
 	}
 	return input;
 }
+function init(){
+	var h=ID("adv");
+	if(!h){
+		ID("h").innerHTML="";
+		TB('hme','Home','HME');
+		TB('cfg','Settings','CFG');
+		TB('adv','Configure','ADV');
+		SA(ID("h"),"class","hme");
+		HME();
+	}
+}
+init();

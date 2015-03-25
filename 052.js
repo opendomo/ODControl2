@@ -38,15 +38,4 @@ function CFG(){
 	it=setInterval(upc,5000);
 	SEL("cfg");
 }
-function init(){
-	var h=ID("adv");
-	if(!h){
-		ID("h").innerHTML="";
-		TB('hme','Home','HME');
-		TB('cfg','Settings','CFG');
-		TB('adv','Configure','ADV');
-		SA(ID("h"),"class","hme");
-	}
-	if (typeof loadMenu == "function") loadMenu();
-}
-window.onload=init;
+
