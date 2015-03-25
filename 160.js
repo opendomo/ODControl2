@@ -11,5 +11,5 @@ var mainMenu = [
    {id:"mnusavet", name:"Export configuration",callback:exportConfiguration},
    {id:"mnuconsl", name:"Console", callback: loadConsole}
 ];
-clearInterval(it);
+loadODControlData();
 loadMenu();

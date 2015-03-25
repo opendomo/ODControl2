@@ -1,9 +1,10 @@
 function loadMenu(){
-   context="";
-   clearMenu();
-   for (var i=0;i<mainMenu.length;i++){
-      addMenuItem(mainMenu[i].id, "menuitem", mainMenu[i].name, null, mainMenu[i].callback);
-   }
+	clearInterval(it);
+	context="";
+	clearMenu();
+	for (var i=0;i<mainMenu.length;i++){
+		addMenuItem(mainMenu[i].id, "menuitem", mainMenu[i].name, null, mainMenu[i].callback);
+	}
 }
 
 function loadConsole(){
