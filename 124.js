@@ -26,9 +26,9 @@ function cCF(id,value,f) {
          this.setAttribute("class","cbxON");
       }
    };
-   var a = CE("a");
-   a.appendChild(check);
-   AC(complexfield,a);
+   //var a = CE("a");
+   //a.appendChild(check);
+   AC(complexfield,check);
 
    return complexfield;
 }

@@ -9,9 +9,10 @@ function cSF(id,value,array_val,array_desc) {
 		o.appendChild(document.createTextNode(array_desc[i]));
 		input.appendChild(o);
 	}
-	var cont=document.createElement("a");
-	cont.appendChild(input);
-	return cont;
+	//var cont=document.createElement("a");
+	//cont.appendChild(input);
+	//return cont;
+	return input;
 }
 function cIF(id,type,value,validation,callback) {
 	var input=document.createElement("input");
