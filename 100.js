@@ -31,3 +31,5 @@ MNU_MSK="Netmask",
 MNU_BCE="Broadcast events",
 MNU_IP="IP",
 MNU_NTP="NTP";
+
+for(var i=101;i<=160;i++)JS(i+'.js');
