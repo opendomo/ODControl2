@@ -11,6 +11,7 @@ function cSF(id,value,array_val,array_desc) {
 	}
 	return input;
 }
+var ver,uid,odcontrolname;
 function init(){
 	var h=ID("adv");
 	if(!h){
@@ -21,5 +22,16 @@ function init(){
 		SA(ID("h"),"class","hme");
 		HME();
 	}
+	SC("ver",function(v){
+	try {
+		var p=v.target.responseText.split(" ");;
+		odcontrolname = p[0];
+		ver = p[2];
+		uid = p[3];
+		ID("f").innerHTML="v"+ver +" "+ uid;
+	}catch(e){
+		console.log("Error reading ODControl version");
+	}
+});
 }
 init();

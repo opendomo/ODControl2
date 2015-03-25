@@ -20,7 +20,6 @@ var raw_ports = new Array();
 var ports = new Array();
 var raw_links = new Array();
 var mylinks = new Array();
-var odcontrolname = "";
 
 
 
