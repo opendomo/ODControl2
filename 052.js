@@ -38,7 +38,7 @@ function CFG(){
 	it=setInterval(upc,5000);
 	SEL("cfg");
 }
-window.onload=function(){
+setTimeout(function(){
 	var h=ID("adv");
 	if(!h){
 		ID("h").innerHTML="";
@@ -47,4 +47,4 @@ window.onload=function(){
 		TB('adv','Configure','ADV');
 		SA(ID("h"),"class","hme");
 	}
-}
+},500);
