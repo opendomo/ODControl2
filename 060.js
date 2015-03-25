@@ -22,6 +22,7 @@ function init(){
 		SA(ID("h"),"class","hme");
 		HME();
 	}
+	SC("net+show",ns);
 	SC("ver",function(v){
 	try {
 		var p=v.target.responseText.split(" ");;
