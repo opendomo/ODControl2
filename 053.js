@@ -4,7 +4,8 @@ function upc(){SC("lsc+cfg",ci);}
 function M(i,c,t,r){var l=ID(t)?ID(t):CE("li",c,i);AC(l,CT(t));AC(l,r);return l;}
 function CT(t){return D.createTextNode(t);}
 function SC(c,f){
-console.log(c);var x=AJ();
+console.log(c);
+var x=AJ();
 x.open("GET",c.replace(/ /g,"+"));
 x.setRequestHeader("Cache-Control","no-cache,max-age=0");
 x.setRequestHeader("Pragma","no-cache");
@@ -25,7 +26,7 @@ function ci(){
 	}
 	t=0;
 	var d=ID("b");
-	a=tx.split("\n");
+	a=tx.split(EOL);
 	for(var i=0;i<a.length;i++){
 		b=a[i].split(":");
 		if(a[i]!="DONE")try{

@@ -30,3 +30,6 @@ SC("set+"+n+"+****"+s.value+(("0"+e.value).slice(-2))+r.value.replace(/:/g,""),f
 return [r,l];
 }
 
+window.onload=function(){
+
+};

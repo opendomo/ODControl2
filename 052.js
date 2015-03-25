@@ -38,3 +38,13 @@ function CFG(){
 	it=setInterval(upc,5000);
 	SEL("cfg");
 }
+window.onload=function(){
+	var h=ID("adv");
+	if(!h){
+		ID("h").innerHTML="";
+		TB('hme','Home','HME');
+		TB('cfg','Settings','CFG');
+		TB('adv','Configure','ADV');
+		SA(ID("h"),"class","hme");
+	}
+}

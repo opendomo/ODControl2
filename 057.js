@@ -1,3 +1,5 @@
+var scheduleval=0;
+
 function cSV(n,v){
 r=CE("input",v,n); 
 SA(r,"title",b[4]);
@@ -6,7 +8,7 @@ r.onclick=showSCH;
 AC(r,CT(v));
 l=M("li","SV",n,r);
 return [r,l]}
-var scheduleval=0;
+
 function showSCH(e){
 var s=ID("schedule");
 if(!s){s=CE("div","schedule","schedule");}
