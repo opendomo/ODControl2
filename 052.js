@@ -13,16 +13,22 @@ function ns(c){
 			nport=parseInt(k[1]);}
 	}
 }
-function sadv(){
-	if (cport==nport) document.location="./adv"; 
-	else document.location="http://"+document.location.hostname+":"+cport;
+function ADV(){
+	if (typeof loadMenu == "function"){
+		SEL("adv");
+		loadMenu();
+	}else {
+		if (cport==nport) document.location="./adv"; 
+		else document.location="http://"+document.location.hostname+":"+cport;
+	}
 }
 var it;
 function HME(){
-	var h=ID("adv");if(!h){ID("h").innerHTML="";
-	TB('hme','Home','HME');
-	TB('cfg','Settings','CFG');
-	TB('adv','Configure','sadv');
+	var h=ID("adv");
+	if(!h){ID("h").innerHTML="";
+	TB('hme',MNU_HME,'HME');
+	TB('cfg',MNU_SET,'CFG');
+	TB('adv',MNU_ADV,'ADV');
 	SA(ID("h"),"class","hme");
 	}
 	SEL("hme");
@@ -39,4 +45,3 @@ function CFG(){
 	it=setInterval(upc,5000);
 	SEL("cfg");
 }
-function ADV(){/*SEL("adv");*/SA(ID("h"),"class","hme");}

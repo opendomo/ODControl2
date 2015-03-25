@@ -1,7 +1,7 @@
 # ODControl2
 This is the development repository for ODControl2 project, and it contains 
 all the files used in the web interface and embedded configuration tools.
-Each file size limit is 1010Bytes, so it's crucial to optimize size and 
+Each file size limit is 1010 Bytes, so it's crucial to optimize size and 
 loading times.
 
 ## Range reorganization
@@ -14,6 +14,7 @@ To optimize page load, files are organized in ranges:
 
 ## Javascript index
 
+    Deprecated files:
     002 - show hide G SA AC CE JS RB SEL
     003 - RL
     004 - AJ upd upc M ID CT SC V n ci TB
@@ -26,7 +27,7 @@ To optimize page load, files are organized in ranges:
 	
 	
 	050 - ID show hide G SA AC CE JS RB SEL
-	051 - (empty)
+	051 $ (literals)
     052 - ns sadv HME CFG ADV
     053 - RL
     054 - AJ upd upc M ID CT SC V n ci TB
