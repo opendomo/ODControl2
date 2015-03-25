@@ -24,13 +24,6 @@ function ADV(){
 }
 var it;
 function HME(){
-	var h=ID("adv");
-	if(!h){ID("h").innerHTML="";
-	TB('hme',MNU_HME,'HME');
-	TB('cfg',MNU_SET,'CFG');
-	TB('adv',MNU_ADV,'ADV');
-	SA(ID("h"),"class","hme");
-	}
 	SEL("hme");
 	ID('b').innerHTML='';
 	clearInterval(it);

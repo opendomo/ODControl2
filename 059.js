@@ -23,7 +23,16 @@ window.onload=function(){
 			console.log("Error reading ODControl version");
 		}
 	});	
+	var h=ID("adv");
+	if(!h){ID("h").innerHTML="";
+	TB('hme',MNU_HME,'HME');
+	TB('cfg',MNU_SET,'CFG');
+	TB('adv',MNU_ADV,'ADV');
+	SA(ID("h"),"class","hme");
+	}
+	
 	var p=location.port;
 	if(p=="")p=80;
 	if(p==nport)HME();else ADV();	
+	
 }
