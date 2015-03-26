@@ -12,13 +12,13 @@ function createDTG(){
 			var pr = ports[portid][0];
 			var pa = document.getElementById("outport");
 			var pv = document.getElementById("portval");
-         command = "dtg+" + pr + "+vie220000+" + pa.value + "+" + pv.value;
+			command = "dtg+" + pr + "+vie220000+" + pa.value + "+" + pv.value;
 
 			var resp = send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				alert(ERR_GRP+ resp);
+				my_alert(ERR_GRP+ resp);
 			} else {
-				alert(DTG_HI);	  
+				my_alert(DTG_HI);	  
 				loadPortsInfo(ports[portid][0]);
 				displayPortDetails(portid);
 			}  

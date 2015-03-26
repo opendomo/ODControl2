@@ -14,7 +14,7 @@ function createGRP(){
 			command="grp+" + pr + "+" + pa.value + "+" + pb.value + "+" + grpt.value;
 			var resp=send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				alert(ERR_GRP + resp);
+				my_alert(ERR_GRP + resp);
 			} else {
 				loadPortsInfo(ports[portid][0]);
 				displayPortDetails(portid);

@@ -21,13 +21,13 @@ function setODControlName(){
 	if (name && (name.length==5)) {
 		var resp = send_command("snm+" + name);
 		if (resp.indexOf("DONE")==-1) {
-			alert(TXT_INVNAME);
+			my_alert(TXT_INVNAME);
 		} else {
-			alert(TXT_OKNAME);
+			my_alert(TXT_OKNAME);
 			odcontrolname = name;
 			loadMenu();
 		}
 	}else{
-		alert(TXT_INVNAME);
+		my_alert(TXT_INVNAME);
 	}
 }

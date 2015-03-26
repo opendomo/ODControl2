@@ -3,7 +3,7 @@ function loadNetworkConfig(){
 		var resp = send_command("net+show");
 		var data = ptoREST(resp);
 		if (!data || resp.indexOf("DONE")==-1) {
-			alert(MSG_NOAV);
+			my_alert(MSG_NOAV);
 			return false;
 		}
 		loadNetworkConfig_menu(data);
@@ -24,7 +24,7 @@ function loadNetworkConfig(){
 			send_command("net+ntp+" + ntp);
 			var ev= ID("ev").value;
 			send_command("net+ev+" + ev);  
-			alert(TXT_OKNAME);
+			my_alert(TXT_OKNAME);
 		}, loadMenu, "net");
 	
 	} catch (e) {

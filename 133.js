@@ -20,8 +20,8 @@ if(ptnm){
 	return true;
 }
 var cr=send_command("lsc+00-23;lsc+24-47;lsc+48-71;lsc+72-96");
-if(cr.length<10){alert("Error loading ports");}
-var pts=cr.split("\n");
+if(cr.length<10){my_alert(MSG_NOAV);}
+var pts=cr.split(EOF);
 var total=0;
 ports=[];
 for(var i=0;i<pts.length;i++){

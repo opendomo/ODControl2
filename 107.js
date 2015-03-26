@@ -4,10 +4,10 @@ function deleteLink(linkID){
    ret = send_command(command);
    if (ret.indexOf("DONE")!=-1) {
       loadLinksInfo();
-      alert("Link deleted!");
+      my_alert(MSG_SAV);
       setTimeout(function(){loadLinksMenu();},500);
    } else {
-      warn(ret,"Error deleting link: "+ ret);
+      my_alert(ERR_SAV+ ret);
    }
 }
 

@@ -27,7 +27,7 @@ function validate_field(id,patt) {
 			return true;
 		} else {
 			//i.style.backgroundColor='#F3C3C3';
-			alert("Invalid value in " + i.id);
+			my_alert(ERR_VAL+" "+i.id);
 			return false;
 		}
 	} else {
