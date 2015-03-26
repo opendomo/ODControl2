@@ -1,6 +1,7 @@
 function displayPortDetails(id){
-if(ports[id][0].indexOf("$")==0)
-{alert("System ports can't be modified");return false;}
+if(ports[id][0].indexOf("$")==0){
+	my_alert(ERR_SYS);return false;
+}
 sel=id;
 portid=id;
 try{
@@ -14,7 +15,7 @@ if(validate_field("portname",rx_str5)){
 		send_command("lbl+"+ports[sel][0]+"+"+portname.value);
 		ports[sel][0]=portname.value;
 	}
-}else{alert("Wrong port name!");return false;}
+}else{my_alert(ERR_SAV);return false;}
 
 var flags="";
 if(isenabled(id)){
@@ -31,5 +32,5 @@ if(isenabled(id)){
 if(flags=="" && (enabled.value==true||enabled.value=="true"))flags+="d";
 displayPortDetails_apply_ranges_and_tolerances(id, flags);
 },function(){loadPortsMenu();},"virtualports");
-}catch(e){alert(e);}
+}catch(e){my_alert(e.message);}
 }

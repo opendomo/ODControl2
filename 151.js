@@ -13,7 +13,7 @@ function displayPortDetails_apply_ranges_and_tolerances(id,port_flags){
 		}
 	}
 	else send_command("cfg+" + ports[sel][0] + "+" + port_flags);
-	alert("Changes successfully saved");
+	my_alert(MSG_SAV);
 	loadPortsInfo(ports[portid][0]);
 	//PortDetails(portid);
 	loadPortsMenu();
