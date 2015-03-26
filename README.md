@@ -49,7 +49,7 @@ To optimize page load, files are organized in ranges:
     103 - ID CE CT pad validate_field
     104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
     105 - loadCSSfile loadJSfile getPortListByType
-    106 - clearConfiguration ptoREST dteToStr
+    106 $ clearConfiguration ptoREST dteToStr
     107 - loadODControlData deleteLink 
     108 - HME2 addMenuItem
     109 - loadMenu loadConsole
