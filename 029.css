@@ -32,21 +32,28 @@ border: none;
 color: #1678E5;
 height: 3rem;
 font-size: 1rem;
-width: 50%;
 position: absolute;
 bottom: 0;
 cursor: pointer;
 }
-#alertbox button:nth-of-type(1) {
+#alertbox button.ub {
+border-top: 1px solid #B4B4B4;
+left: 0;
+border-radius: 0 0 10px 10px;
+width: 100%;
+}
+#alertbox button.lb {
 border-top: 1px solid #B4B4B4;
 border-right: 1px solid #B4B4B4;
 left: 0;
 border-radius: 0 0 0 10px;
+width: 50%;
 }
-#alertbox button:nth-of-type(2) {
+#alertbox button.lb {
 border-top: 1px solid #B4B4B4;
 right: 0;
 border-radius: 0 0 10px 0;
+width: 50%;
 }
 #alertbgnd {
 display: block;
