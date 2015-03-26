@@ -1,10 +1,12 @@
 function clearConfiguration(){
-	my_confirm("Do you want to clear the configuration? All changes will be lost",function(){
-		send_command('clr');
-		setTimeout(function(){document.location.reload();},2000);	   
-	});
+	my_confirm("Do you want to clear the configuration? All changes will be lost", "clearConfigurationConfirmed()");
 }
-
+function clearConfigurationConfirmed(){
+	send_command('clr');
+	setTimeout(function(){
+		document.location.reload();
+	},2000);
+}
 function ptoREST(data) {
    var t = data.replace("DONE","");
    var obj = {};
