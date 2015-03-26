@@ -39,7 +39,6 @@
 
 			case 'ver':
 				echo "odctl versn $VERSION $UID 12:28:11 Jun 16 2013\n";
-				echo "DONE";
 				break;
 
 			case "lsc":
@@ -164,7 +163,6 @@ vt061:XVH_:
 				  
 			case "snm":
 			case "set":
-				echo "DONE";
 			default:
 				die ("E301:$cmd");
 		}
