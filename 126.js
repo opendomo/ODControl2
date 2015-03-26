@@ -18,12 +18,12 @@ function loadTemplate(tpl){
 		addMenuItem("progresserrlog","menuitem",LBL_LOG,ta,null);
 	} catch (e) {
 	}
-	addToolbarSaveCancelHelp(null,loadTemplates);
-
-	send_command("clr");
-	curr_tpl_cmd=0;
-	failedcommands=0;
-	setTimeout(loadTemplateNextCommand,2000);
+	addToolbarSaveCancelHelp(function(){
+		send_command("clr");
+		curr_tpl_cmd=0;
+		failedcommands=0;
+		setTimeout(loadTemplateNextCommand,2000);		
+	},loadTemplates);
 }
 
 

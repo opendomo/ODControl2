@@ -1,29 +1,21 @@
 function loadTemplates() {
-	JS("http://cloud.opendomo.com/odctp/list.php?ver="+ver+"&uid="+uid);
+	if (typeof templates == "undefined"){
+		JS("http://cloud.opendomo.com/odctp/list.php?ver="+ver+"&uid="+uid);
+		setTimeout(listTemplates, 1000);
+	}else {
+		listTemplates();
+	}
+}
+function listTemplates(){
 	clearMenu();
-	setTimeout(function(){
-		if (typeof templates == "undefined") {
-			addMenuItem("mess","message",MSG_NONET);
-			addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
-		} else {
-			for (var i=0;i<templates.length;i++){
-				addMenuItem("temp_"+i, "menuitem", templates[i], null, 
-					function(){loadTemplate(parseInt(this.id.split("_")[1]));});
-			}	
-			addToolbarSaveCancelHelp(null, loadMenu, "net");  
-		}
-	}, 1000);
+	if (typeof templates == "undefined") {
+		addMenuItem("mess","message",MSG_NONET);
+		addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
+	} else {
+		for (var i=0;i<templates.length;i++){
+			addMenuItem("temp_"+i, "menuitem", templates[i], null, 
+				function(){loadTemplate(parseInt(this.id.split("_")[1]));});
+		}	
+		addToolbarSaveCancelHelp(null, loadMenu, "net");  
+	}
 }
-/*setTimeout(function(){
-var p=ID("main");
-if(parseInt(document.title)>0){
-	var template=parseInt(document.title);
-	p=ID("log");
-	p.innerHTML="<div id='main'><div id='h'></div><ul id='b'>Loading</ul><a id='f'></a></div>";
-	loadODControlData();
-	setTimeout(function(){loadTemplate(template);},1000);
-}
-odcontrolname=document.title;
-
-},100);
-*/
