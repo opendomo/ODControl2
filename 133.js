@@ -4,6 +4,7 @@ if(ptnm){
 	if(id>=0){
 		var cr=send_command("lsc+"+ptnm);
 		if(cr!="DONE"){
+			var pts=cr.replace(/DONE/g,"").split(EOL);
 			if(pts[0].indexOf(":")>0){
 				var s=pts[0].split(":");
 				var pn=s[0];
