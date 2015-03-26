@@ -1,5 +1,5 @@
-function loadPortsInfo(ptnm){
-if(ptnm){
+function loadPortsInfo(){
+/*if(ptnm){
 	id=getPortId(ptnm);
 	if(id>=0){
 		var cr=send_command("lsc+"+ptnm);
@@ -18,7 +18,7 @@ if(ptnm){
 		}
 	}
 	return true;
-}
+}*/
 var cr=send_command("lsc+00-23;lsc+24-47;lsc+48-71;lsc+72-96");
 if(cr.length<10){my_alert(MSG_NOAV);}
 var pts=cr.split(EOL);
