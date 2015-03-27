@@ -7,7 +7,7 @@ if(i==-1||i>=cmds.length){
 		my_alert(MSG_LERR);
 		var e=ID("errlog");
 		for(var i=0;i<errorlog.length;++i)
-			e.value+=errorlog[i]+"\n";
+			e.value+=errorlog[i]+EOL;
 		console.log(errorlog);
 	}else{
 		my_alert(MSG_SUCC);
@@ -21,7 +21,7 @@ if(i==-1||i>=cmds.length){
 	if(resp.indexOf("DONE")==-1){
 		failedcommands++;
 		ID("progresserr").value=failedcommands;
-		errorlog.push("Command: ["+cmds[i]+"] Result: ["+resp.replace("\n","")+"]");
+		errorlog.push(cmds[i]+" Result: ["+resp.replace(EOL,"")+"]");
 	}
 	if(resp==""){
 		curr_tpl_cmd--;
