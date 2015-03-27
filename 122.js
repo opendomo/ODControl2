@@ -1,8 +1,4 @@
 function loadTemplates() {
-<<<<<<< HEAD
-	if (typeof templates == "undefined"){
-		JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
-=======
 	if (templates.length ==0){
 		//JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
 
@@ -35,7 +31,6 @@ var cloudSessionStarted = true;
 console.log(templates);
 // End of EMBEDDED
 		
->>>>>>> facc08a0ba079c06c561961d25c0231182652873
 		setTimeout(listTemplates, 1000);
 	}else {
 		listTemplates();
