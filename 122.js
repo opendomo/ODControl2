@@ -45,7 +45,7 @@ function listTemplates(){
 	} else {
 		for (var i=0;i<templates.length;i++){
 			addMenuItem("temp_"+i, "menuitem", templates[i].name, null, 
-				function(){loadTemplate(parseInt(this.id.split("_")[1]));});
+				function(){loadTemplate(templates[parseInt(this.id.split("_")[1])]);});
 		}	
 		addToolbarSaveCancelHelp(null, loadMenu, "net");  
 	}
