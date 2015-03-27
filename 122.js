@@ -4,7 +4,6 @@ function loadTemplates() {
 		//JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
 
 // EMBEDDED for testing
-var templates = new Array();
 templates.push({name: "Prueba 1",
 id: "149",
 desc: "Prueba de plantilla",
@@ -45,7 +44,7 @@ function listTemplates(){
 		addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
 	} else {
 		for (var i=0;i<templates.length;i++){
-			addMenuItem("temp_"+i, "menuitem", templates[i], null, 
+			addMenuItem("temp_"+i, "menuitem", templates[i].name, null, 
 				function(){loadTemplate(parseInt(this.id.split("_")[1]));});
 		}	
 		addToolbarSaveCancelHelp(null, loadMenu, "net");  
