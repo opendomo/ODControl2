@@ -1,6 +1,6 @@
 var templates = new Array();
 function loadTemplates() {
-	if (typeof templates == "undefined"){
+	if (templates.length ==0){
 		//JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
 
 // EMBEDDED for testing
