@@ -1,6 +1,6 @@
 function loadTemplates() {
 	if (typeof templates == "undefined"){
-		JS("http://cloud.opendomo.com/odctp/list.php?ver="+ver+"&uid="+uid);
+		JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
 		setTimeout(listTemplates, 1000);
 	}else {
 		listTemplates();
