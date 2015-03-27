@@ -1,3 +1,5 @@
+var templates =[];
+
 function loadTemplates() {
 	if (templates.length ==0){
 		//JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
