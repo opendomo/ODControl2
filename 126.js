@@ -1,6 +1,6 @@
 function loadTemplate(tpl){
 	try {
-		var comm = tpl.desc;
+		var comm = tpl.commands;
 		cmds=comm.replace(EOL,";;").split(";;");
 		var total=cmds.length;
 		clearMenu();
