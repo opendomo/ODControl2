@@ -79,7 +79,7 @@ To optimize page load, files are organized in ranges:
 	134 - vportExtractConfig
 	135 - loadNetworkConfig_menu
 	136 - loadNetworkConfig
-	137 $ loadLinksMenu_menu
+	137 - loadLinksMenu_menu
 	138 - loadLinksMenu
 	139 - extractConfiguration_switch
 	140 - extractConfiguration

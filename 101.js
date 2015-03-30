@@ -15,7 +15,7 @@ function createTTG(){
 			var command="ttg+"+pr+"+20130101000000+"+pa.value+"+"+pv.value;
 			var resp=send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				my_alert(ERR_CTG+ resp);
+				my_alert(ERR_SAV + resp);
 			} else {
 				my_alert(MSG_CTG);
 				loadPortsInfo(ports[portid][0]);

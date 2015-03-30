@@ -1,7 +1,7 @@
 function clearConfiguration(){
-	my_confirm("Do you want to clear the configuration? All changes will be lost", "clearConfigurationConfirmed()");
+	my_confirm(MSG_CLR, "clrConf()");
 }
-function clearConfigurationConfirmed(){
+function clrConf(){
 	send_command('clr');
 	setTimeout(function(){
 		document.location.reload();

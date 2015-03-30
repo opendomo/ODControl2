@@ -16,7 +16,7 @@ function createDTG(){
 
 			var resp = send_command(command);
 			if (resp.indexOf("DONE")==-1) {
-				my_alert(ERR_GRP+ resp);
+				my_alert(ERR_SAV + resp);
 			} else {
 				my_alert(DTG_HI);	  
 				loadPortsInfo(ports[portid][0]);

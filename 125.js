@@ -35,6 +35,4 @@ if(i==-1||i>=cmds.length){
 	curr_tpl_cmd++;
 	current_template_timer=setTimeout(loadTemplateNextCommand,100);
 }
-
 }
-
