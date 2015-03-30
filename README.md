@@ -10,7 +10,7 @@ To optimize page load, files are organized in ranges:
  1. Control interface: JS [050-060] CSS [020-029]
  2. Configuration tools: JS [100-160] CSS [020-029]
  3. All: SVG [090-098], Manifest [099]
-
+ 4. Templates: [080-089]
 
 ## Javascript index
 
