@@ -11,6 +11,3 @@ a#f{padding:2px;}
 .SV input{width:90px;border:1px solid #888;border-radius:9px;box-shadow:inset 0px 0px 5px 0px #333;font-weight:bold;cursor:pointer;text-align:center}
 .SV input.OFF:after{background-color:#ddd;position:relative;content:"OFF";display:inline-block;color:#333;}
 .SV input.ON{background-color:#4F95EB;color:#fff;}
-
-
-
