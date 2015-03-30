@@ -1,7 +1,7 @@
 li#startsess.titleitem,li#dtx.menuitem{font-size: 12px;text-align: text-align: justify;text-justify: inter-word;}
 li#lnkadd,li#label.titleitem{font-weight: bold;margin-top: 30px;}
-li#label.helpitem{border: 1px solid #0a0;border-radius: 9px;background-color: #DFFFDF;margin: 30px;font-weight: normal;text-align: justify;font-size:14px}
-li#label.warnitem{border: 1px solid #a00;border-radius: 9px;background-color:#FFC8CE;margin: 30px;font-weight: normal;text-align: justify;font-size:14px}
+li.helpitem{border: 1px solid #0a0;border-radius: 9px;background-color: #DFFFDF;margin: 30px;font-weight: normal;text-align: justify;font-size:14px}
+li.warnitem{border: 1px solid #a00;border-radius: 9px;background-color:#FFC8CE;margin: 30px;font-weight: normal;text-align: justify;font-size:14px}
 #ptype{width:150px}
 input[id*="pt"]{text-align:center;width:90px;cursor:pointer}
 input#ptDO{background-color:#eee}
