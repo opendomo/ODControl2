@@ -16,7 +16,6 @@ if(validate_field("portname",rx_str5)){
 		ports[sel][0]=portname.value;
 	}
 }else{my_alert(ERR_SAV);return false;}
-
 var flags="";
 if(isenabled(id)){
 	if(isdigital(sel)){flags+="d";}
