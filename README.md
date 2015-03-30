@@ -54,8 +54,8 @@ To optimize page load, files are organized in ranges:
     108 - HME2 addMenuItem
     109 - loadMenu loadConsole
     110 - cSF cIF 
-    111 - loadPortsMenu
-    112 - f createVP 
+    111 - loadPortsMenu f
+    112 - createVP 
 	113 - createRDV
 	114 - createRPT
 	115 - createGRP
@@ -101,6 +101,6 @@ To optimize page load, files are organized in ranges:
 	156 - .
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI
 	158 $ VAR_HI PER_HI
-	159 (empty)
+	159 (literals)
 	160 $ .
 

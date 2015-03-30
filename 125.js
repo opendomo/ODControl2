@@ -20,14 +20,14 @@ if(i==-1||i>=cmds.length){
 	var resp=send_command(cmds[i]);
 	if(resp.indexOf("DONE")==-1){
 		failedcommands++;
-		ID("progresserr").value=failedcommands;
+		ID("pe").value=failedcommands;
 		errorlog.push(cmds[i]+" Result: ["+resp.replace(EOL,"")+"]");
 	}
 	if(resp==""){
 		curr_tpl_cmd--;
 		send_command("ver+");
 	}
-	ID("progresscurrent").value=i+1;
+	ID("pc").value=i+1;
 	}else{
 		curr_tpl_cmd++;
 		loadTemplateNextCommand();

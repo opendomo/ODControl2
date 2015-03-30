@@ -1,5 +1,4 @@
-function changeTime()
-{
+function changeTime(){
 	clearMenu();
 	var dte=send_command("dte+show").split(" ");
 	var sel="";
@@ -7,16 +6,16 @@ function changeTime()
 	try {
 		if(parseInt(dte[7].split(":")[1])==1){
 			dsp='none'; 
-			sel="Network Server (NTP)";
+			sel=LBL_NTPS;
 		}else{
 			dsp='block'; 
-			sel="Internal date";
+			sel=LBL_IDNTP;
 		}
 	} catch(e) {}
-	var x=cSF("datetype",sel,["Network Server (NTP)","Internal date"]);
-	addMenuItem("dtp","menuitem", "Date type", x);
+	var x=cSF("datetype",sel,[LBL_NTPS,LBL_IDNTP]);
+	addMenuItem("dtp","menuitem", LBL_DTYPE, x);
 	var dx=cIF("datein", "text", dteToStr(dte));
-	addMenuItem("dateinput","menuitem", "New date:", dx);
+	addMenuItem("dateinput","menuitem", LBL_NEWD, dx);
 	var dateinput=ID("dateinput");
 	dateinput.style.display=dsp; 
 
@@ -26,8 +25,8 @@ function changeTime()
 	x.onchange = function(e) {
 		var v=ID("datetype");
 		idx=v.selectedIndex;
-		if(idx==0) { dateinput.style.display='none'; }
-		else { dateinput.style.display='block'; }
+		if(idx==0){dateinput.style.display='none';}
+		else{dateinput.style.display='block';}
 	};
 	addToolbarSaveCancelHelp(function(){
 		var r=true;
@@ -40,5 +39,3 @@ function changeTime()
 		clearInterval(intv);
 	}, null);	
 }
-
-

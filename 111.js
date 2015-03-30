@@ -1,3 +1,13 @@
+function f(){
+	var s=ID("s_p");
+	var i=ID("i_p");
+	var t=ID("toler");
+	if(ID("analog").value=="true"){
+		show(i);show(t);hide(s);
+	} else { 
+		hide(i);hide(t);show(s);
+	}
+}
 function loadPortsMenu() {
    try {
       context="ports";
