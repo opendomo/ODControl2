@@ -37,11 +37,13 @@ To optimize page load, files are organized in ranges:
     058 - idh idw
     059 - cWV
     060 - cSF
-    061 - 
-    062 - 
-    063 - 
-    064 - 
-    065 - 
+
+	080 - Templates
+	081 - 
+	082 - 
+	083 - 
+	084 - 
+	
 	099 - appcache
 	100 $ (literals)
     101 - createTTG
