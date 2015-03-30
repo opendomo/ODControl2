@@ -40,14 +40,12 @@ console.log(templates);
 }
 function listTemplates(){
 	clearMenu();
-	if (typeof templates == "undefined") {
-		addMenuItem("mess","message",MSG_NONET);
-		addToolbarSaveCancelHelp(function() {}, loadMenu, "net");  			
-	} else {
+	try{
+		addMenuItem("mess","helpitem",MSG_TEMP);
 		for (var i=0;i<templates.length;i++){
 			addMenuItem("temp_"+i, "menuitem", templates[i].name, null, 
 				function(){loadTemplate(templates[parseInt(this.id.split("_")[1])]);});
 		}	
-		addToolbarSaveCancelHelp(null, loadMenu, "net");  
-	}
+	} catch(e){}
+	addToolbarSaveCancelHelp(null, loadMenu, "template");
 }
