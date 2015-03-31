@@ -14,50 +14,50 @@ To optimize page load, files are organized in ranges:
 
 ## Javascript index
 
-    Deprecated files:
-    002 - show hide G SA AC CE JS RB SEL
-    003 - RL
-    004 - AJ upd upc M ID CT SC V n ci TB
-    005 - ns sadv HME CFG ADV
-    006 - AM SV
-    007 - loadODinfo
-    008 - TB RL
-    009 - G SA AC CE JS
-    010 - adv
-	
-	
+	Deprecated files:
+	002 - show hide G SA AC CE JS RB SEL
+	003 - RL
+	004 - AJ upd upc M ID CT SC V n ci TB
+	005 - ns sadv HME CFG ADV
+	006 - AM SV
+	007 - loadODinfo
+	008 - TB RL
+	009 - G SA AC CE JS
+	010 - adv
+
+
 	050 - ID show hide G SA AC CE JS RB SEL
 	051 $ (literals)
-    052 - TB RL ns HME CFG ADV
-    053 - AJ upd upc M ID CT SC V n ci  (empty)
-    054 - AM SV
-    055 - cAV cDV cDI cAI
-    056 - cCV
-    057 - cSV showSCH
-    058 - idh idw
-    059 - cWV
-    060 - cSF
+	052 - TB RL ns HME CFG ADV
+	053 - AJ upd upc M ID CT SC V n ci  (empty)
+	054 - AM SV
+	055 - cAV cDV cDI cAI
+	056 - cCV
+	057 - cSV showSCH
+	058 - idh idw
+	059 - cWV
+	060 - cSF
 
 	080 - Templates
 	081 - 
 	082 - 
 	083 - 
 	084 - 
-	
+
 	099 - appcache
 	100 $ (literals)
-    101 - createTTG
-    102 - changeTime
-    103 - ID CE CT pad validate_field
-    104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
-    105 - loadCSSfile loadJSfile getPortListByType
-    106 - clearConfiguration ptoREST dteToStr
-    107 - loadODControlData deleteLink 
-    108 - HME2 addMenuItem
-    109 - loadMenu loadConsole
-    110 - cSF cIF 
-    111 - loadPortsMenu f
-    112 - createVP 
+	101 - createTTG
+	102 - changeTime
+	103 - ID CE CT pad validate_field
+	104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
+	105 - loadCSSfile loadJSfile getPortListByType
+	106 - clearConfiguration ptoREST dteToStr
+	107 - loadODControlData deleteLink 
+	108 - HME2 addMenuItem
+	109 - loadMenu loadConsole
+	110 - cSF cIF 
+	111 - loadPortsMenu f
+	112 - createVP 
 	113 - createRDV
 	114 - createRPT
 	115 - createGRP
@@ -76,8 +76,8 @@ To optimize page load, files are organized in ranges:
 	128 - exportConfiguration
 	129 - loadLinksInfo initmsg
 	130 $ (literals)
-    131 - my_confirm my_alert hidealert errorHandler getPortId
-    133 - loadPortsInfo
+	131 - my_confirm my_alert hidealert errorHandler getPortId
+	133 - loadPortsInfo
 	134 - vportExtractConfig
 	135 - loadNetworkConfig_menu
 	136 - loadNetworkConfig
@@ -89,16 +89,16 @@ To optimize page load, files are organized in ranges:
 	142 - createMDB_menu
 	143 - createMDB
 	144 - setCPass setUPass
-	145 $ loadEncryptionPassword_menu loadSecurity
-	146 $ loadEncryptionPassword
-	147 $ displayPortDetails_menu_init
+	145 - loadSecurity
+	146 - setEKey
+	147 - displayPortDetails_menu_init
 	148 - displayPortDetails_process_analog
 	149 - displayPortDetails_process_virtuals_1
 	150 - displayPortDetails_process_virtuals_2
 	151 - displayPortDetails_apply_ranges_and_tolerances 
 	152 - displayPortDetails
 	153 - defpn
-    154 - send_command
+	154 - send_command
 	155 $ grptypes_desc trgtypes_desc tags_desc analogtype_desc
 	156 - (global variables)
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI

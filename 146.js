@@ -1,31 +1,33 @@
-function loadEncryptionPassword() {
+function setEKey() {
 	try{
-		clearMenu();
-		loadEncryptionPassword_menu();
-		addToolbarSaveCancelHelp(function() {
-			var encrypted = ID("encrypted");
-			var pass = ID("inputproto");
-			var repeat = ID("inputrepeatproto");
+	var status = send_command("sec proto show");
+	clearMenu();
+	addMenuItem("sprot","menuitem",LBL_ENC,cCF("encrypted",status.indexOf("clear")==-1),null);
+	addMenuItem("susrp","menuitem",LBL_ENK,cIF("inputproto", "password", ""));
+	addMenuItem("susrr","menuitem",MNU_RTP,cIF("inputrepeatproto", "password", ""));
 
-			if(encrypted.value==false||encrypted.value=="false"){
-				send_command("sec proto clear");
-			}else{
-				send_command("sec proto encrypted");
-			}
+	addToolbarSaveCancelHelp(function() {
+		var encrypted = ID("encrypted");
+		var pass = ID("inputproto");
+		var repeat = ID("inputrepeatproto");
 
-			if(pass.value!=repeat.value) {
-				my_alert("Passwords don't match"); return;}
-			if (pass.value == "" ) {
-				my_alert("Password cannot be empty!"); return;}
-			command = "sec+passw+" + pass.value;
-			var resp = send_command(command);
-			if (resp.indexOf("DONE")==-1) {
-				my_alert("Error assigning password "+ resp);
-			} else {
-				my_alert("Password changed");
-				loadSecurity();
-			}
-		}, loadSecurity);
+		if(encrypted.value==false||encrypted.value=="false"){
+			send_command("sec proto clear");
+		}else{
+			send_command("sec proto encrypted");
+		}
+
+		if(pass.value!=repeat.value) { my_alert(MSG_PDM); return;}
+		if (pass.value == "" ) {my_alert(MSG_NOE); return;}
+		command = "sec+passw+" + pass.value;
+		var resp = send_command(command);
+		if (resp.indexOf("DONE")==-1) {
+			my_alert(ERR_SAV+ resp);
+		} else {
+			my_alert(MSG_SAV);
+			loadSecurity();
+		}
+	}, loadSecurity);
 
 	} catch (e) {
 		errorHandler(e);
