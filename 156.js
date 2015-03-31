@@ -5,11 +5,3 @@ var rx_time='^20[0-9][0-9]/[0-1][0-9]/[0-3][0-9] [0-2][0-9]:[0-5][0-9]:[0-5][0-9
 var rx_str='^[a-zA-Z0-9]+$';
 var rx_str5='^[a-zA-Z0-9]{5}$';
 var rx_num='^[0-9]{5}$';
-
-var port_visible = "h";
-var port_visible_config = "";
-var port_enabled = 1;
-var port_analog = 0;
-var portid = 0;
-
-var context = "";

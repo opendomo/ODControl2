@@ -1,4 +1,4 @@
-function displayPortDetails_apply_ranges_and_tolerances(id,port_flags){
+function dpd_apply(id,port_flags){
 	if (isenabled(id)) {
 	if (isanalog(sel)) { // Ranges and tolerance applies for analogs AFTER CFG
 		send_command("cfg+" + ports[sel][0] + "+" + anlgtype.value + "+" + port_flags);

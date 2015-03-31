@@ -1,3 +1,11 @@
+var mainMenu,
+ port_visible = "h";
+ port_visible_config = "";
+ port_enabled = 1;
+ port_analog = 0;
+ portid = 0,
+ context = "";
+ 
 function ID(id) {
    var d = document;
    return d.getElementById(id);

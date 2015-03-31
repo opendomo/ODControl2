@@ -48,7 +48,7 @@ To optimize page load, files are organized in ranges:
 	100 $ (literals)
 	101 - createTTG
 	102 - changeTime
-	103 - ID CE CT pad validate_field
+	103 - ID CE CT pad validate_field (global variables)
 	104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
 	105 - loadCSSfile loadJSfile getPortListByType
 	106 - clearConfiguration ptoREST dteToStr
@@ -91,11 +91,11 @@ To optimize page load, files are organized in ranges:
 	144 - setCPass setUPass
 	145 - loadSecurity
 	146 - setEKey
-	147 - displayPortDetails_menu_init
-	148 - displayPortDetails_process_analog
-	149 - displayPortDetails_process_virtuals_1
-	150 - displayPortDetails_process_virtuals_2
-	151 - displayPortDetails_apply_ranges_and_tolerances 
+	147 - dpd_init
+	148 $ dpd_analog
+	149 $ dpd_virtuals_1
+	150 $ dpd_virtuals_2
+	151 $ dpd_apply
 	152 - displayPortDetails
 	153 - defpn
 	154 - send_command

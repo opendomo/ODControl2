@@ -1,4 +1,4 @@
-function displayPortDetails_menu_init(id){
+function dpd_init(id){
 	clearMenu();
 	var e=cIF("portname","text",ports[id][0],"[a-zA-Z0-9]{5}");
 	SA(e,"maxlength",5);
