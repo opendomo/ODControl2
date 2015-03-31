@@ -2,8 +2,8 @@ var templates =[];
 
 function loadTemplates() {
 	if (templates.length ==0){
-		//JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
-
+		JS("http://cloud.opendomo.com/odctp/json.php?ver="+ver+"&uid="+uid);
+/*
 // EMBEDDED for testing
 templates.push({name: "Prueba 1",
 id: "149",
@@ -32,7 +32,7 @@ commands: "tag do000 l;;tag do001 c;;tag do002 l;;tag do003 l;;tag do004 c;;tag 
 var cloudSessionStarted = true;
 console.log(templates);
 // End of EMBEDDED
-
+*/
 		for(var i=80;i<=89;i++)JS('0'+i+'.js');
 		setTimeout(listTemplates, 1000);
 	}else {
