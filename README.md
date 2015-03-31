@@ -92,9 +92,9 @@ To optimize page load, files are organized in ranges:
 	145 - loadSecurity
 	146 - setEKey
 	147 - dpd_init
-	148 $ dpd_analog
+	148 - dpd_analog
 	149 $ dpd_virtuals_1
-	150 $ dpd_virtuals_2
+	150 - dpd_virtuals_2
 	151 $ dpd_apply
 	152 - displayPortDetails
 	153 - defpn

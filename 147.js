@@ -6,7 +6,7 @@ function dpd_init(id){
 
 	var en=cCF("enabled",isenabled(id));
 	addMenuItem("fen","menuitem",LBL_ENA, en, null);
-	if(!isvirtual(id))ID("fldenable").style.display="none";
+	if(!isvirtual(id))ID("fen").style.display="none";
 	
 	if(isenabled(id)){
 		addMenuItem("fvis","menuitem",LBL_VIS,cCF("visible",isvisible(id)),null);

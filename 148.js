@@ -6,16 +6,10 @@ function dpd_analog(id) {
 	tolval = ((""==ports[id][7])?1:parseFloat(0+ports[id][7]));
 
 	if(isenabled(id)){
-
-	addMenuItem("fldantype","menuitem","Port type",
-	 cSF("anlgtype", ports[id][6], analogtype, analogtype_desc), null);
-
-	addMenuItem("fldminval","menuitem","Minimum",
-	 cIF("minvalue","number",minval,"[0-9]+"),null);
-	addMenuItem("fldmaxval","menuitem","Maximum",
-	 cIF("maxvalue","number",maxval,"[0-9]+"),null);
-	addMenuItem("fldtolerance","menuitem","Tolerance",
-	 cIF("tolerance","number",tolval,"[0-9]+"),null);
+	addMenuItem("fldantype","menuitem",LBL_PTY,cSF("anlgtype", ports[id][6], analogtype, analogtype_desc), null);
+	addMenuItem("fldminval","menuitem",LBL_MIN,cIF("minvalue","number",minval,"[0-9]+"),null);
+	addMenuItem("fldmaxval","menuitem",LBL_MAX,cIF("maxvalue","number",maxval,"[0-9]+"),null);
+	addMenuItem("fldtolerance","menuitem",LBL_TOL,cIF("tolerance","number",tolval,"[0-9]+"),null);
 	}
 }
 
