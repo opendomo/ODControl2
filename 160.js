@@ -12,4 +12,4 @@ var mainMenu = [
    {id:"mnuconsl", name:"Console", callback: loadConsole}
 ];
 loadODControlData();
-loadMenu();
+setTimeout(loadMenu,500);

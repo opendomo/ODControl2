@@ -1,9 +1,13 @@
 function loadMenu(){
-	clearInterval(it);
-	context="";
-	clearMenu();
-	for (var i=0;i<mainMenu.length;i++){
-		addMenuItem(mainMenu[i].id, "menuitem", mainMenu[i].name, null, mainMenu[i].callback);
+	try{
+		clearInterval(it);
+		context="";
+		clearMenu();
+		for (var i=0;i<mainMenu.length;i++){
+			addMenuItem(mainMenu[i].id, "menuitem", mainMenu[i].name, null, mainMenu[i].callback);
+		}
+	}catch(e){
+		RL();
 	}
 }
 
@@ -21,13 +25,9 @@ function loadConsole(){
 		}
 	};
 	addMenuItem("cmd","menuitem", LBL_EXE, cmd);
-
-	var ta= document.createElement("textarea");
-	ta.setAttribute("class", "tpl");
-	ta.setAttribute("id","tacmd");
+	var ta= CE("textarea","tpl","tacmd");
 	ta.setAttribute("resize","none");
-	ta.setAttribute("readonly","");
-	ta.appendChild(document.createTextNode(""));
+	ta.appendChild(CT(""));
 	addMenuItem("startsess","menuitem","",ta,null);
 	addToolbarSaveCancelHelp(null,loadMenu);
 	ID("command").focus();
