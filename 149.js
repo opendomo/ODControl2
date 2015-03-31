@@ -4,27 +4,27 @@ function dpd_virtuals_1(id) {
 	var extdata = CT(" (" + ports[id][6] + ")");
 	addMenuItem("selZTG", 
 		t=="ZTG"?"optionsel":"option", 
-		"Countdown",	
+		MNU_ZTG,	
 		t=="ZTG"?extdata:null, createZTG);
 	addMenuItem("selTRG", 
 		t=="TRG"?"optionsel":"option", 
-		"Conditional", 
+		MNU_TRG, 
 		t=="TRG"?extdata:null, createTRG);
 	addMenuItem("selRDV", 
 		t=="RDV"?"optionsel":"option", 
-		"Remote device", 
+		MNU_RDV, 
 		t=="RDV"?extdata:null, createRDV);
 	addMenuItem("selRPT", 
 		t=="RPT"?"optionsel":"option", 
-		"Remote port", 
+		MNU_RPT, 
 		t=="RPT"?extdata:null, createRPT);
 	addMenuItem("selMDB", 
 		t=="MDB"?"optionsel":"option", 
-		"Modbus port", 
+		MNU_MDB, 
 		t=="MDB"?extdata:null, createMDB);
 	addMenuItem("selSCH", 
 		t=="SCH"?"optionsel":"option", 
-		"Scheduler", 
+		MNU_SCH, 
 		t=="SCH"?extdata:null, createSCH);
 }
 
