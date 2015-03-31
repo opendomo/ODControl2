@@ -51,7 +51,7 @@ To optimize page load, files are organized in ranges:
     103 - ID CE CT pad validate_field
     104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
     105 - loadCSSfile loadJSfile getPortListByType
-    106 $ clearConfiguration ptoREST dteToStr
+    106 - clearConfiguration ptoREST dteToStr
     107 - loadODControlData deleteLink 
     108 - HME2 addMenuItem
     109 - loadMenu loadConsole
@@ -75,8 +75,8 @@ To optimize page load, files are organized in ranges:
 	127 - showfrm clearMenu createProgressField
 	128 - exportConfiguration
 	129 - loadLinksInfo initmsg
-	130 - my_confirm hidealert
-    131 - getPortId errorHandler showHidePanel
+	130 $ (literals)
+    131 - my_confirm my_alert hidealert errorHandler getPortId
     133 - loadPortsInfo
 	134 - vportExtractConfig
 	135 - loadNetworkConfig_menu
@@ -84,11 +84,11 @@ To optimize page load, files are organized in ranges:
 	137 - loadLinksMenu_menu
 	138 - loadLinksMenu
 	139 - extractConfiguration_switch
-	140 - extractConfiguration
-	141 $ createMDB_menu
-	142 $ createMDB
-	143 $ loadODCConfiguratorPassword
-	144 $ loadUserPassword
+	140 - (empty)
+	141 - extractConfiguration
+	142 - createMDB_menu
+	143 - createMDB
+	144 - setCPass setUPass
 	145 $ loadEncryptionPassword_menu loadSecurity
 	146 $ loadEncryptionPassword
 	147 $ displayPortDetails_menu_init
@@ -100,7 +100,7 @@ To optimize page load, files are organized in ranges:
 	153 - defpn
     154 - send_command
 	155 $ grptypes_desc trgtypes_desc tags_desc analogtype_desc
-	156 - .
+	156 - (global variables)
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI
 	158 $ VAR_HI PER_HI
 	159 $ (literals)

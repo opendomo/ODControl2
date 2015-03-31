@@ -1,26 +1,12 @@
-function my_confirm(text,callback_txt) {
-	var a = initmsg();
-	var b = ID("alertbgnd");
-	a.innerHTML = "<h1>" + LBL_CFM + "</h1>" +
-		"<p>" + text + "</p>" +
-		"<button class='lb' onclick='hidealert()'>"+LBL_CANCEL+"</button>" + 
-		"<button class='rb' onclick=\"" + callback_txt + "\" >"+LBL_OK+"</button>";
-	a.style.display = "block";
-	b.style.display = "block";
-}
-function my_alert(text){
-	var a = initmsg();
-	var b = ID("alertbgnd");
-	a.innerHTML = "<h1>" + LBL_ALE + "</h1>" +
-		"<p>" + text + "</p>" +
-		"<button class='ub' onclick='hidealert()'>"+LBL_OK+"</button>";
-	a.style.display = "block";
-	b.style.display = "block";
-}
-function hidealert() {
-	var a = ID("alertbox");
-	var b = ID("alertbgnd");
-	a.style.display = "none";
-	b.style.display = "none";
-}
-
+var MNU_CPAS="Configurator password",
+MNU_UPAS="User password",
+MNU_RTP="Retype password",
+MSG_PDM="Passwords don't match",
+LBL_DIR="Direction",
+LBL_ADR="Address",
+LBL_REG="Register",
+LBL_BAU="Baud rate",
+LBL_PAR="Parity",
+LBL_STB="Stop bits",
+LBL_FCO="Function code",
+LBL_DTY="Data type";

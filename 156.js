@@ -13,7 +13,3 @@ var port_analog = 0;
 var portid = 0;
 
 var context = "";
-
-
-
-
