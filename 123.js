@@ -21,4 +21,17 @@ function addToolbarSaveCancelHelp(callbacksave,callbackcancel,keyword){
 	}
 	ID("menu").appendChild(tbr);
 }
-
+function addToolbar(t){
+	var tbr=CE("div","buttons","tbr");
+	try{
+		for (var i=0;i<t.length;i++){
+			var i=CE("a","button",t.id);
+			AC(i,CT(t.name));
+			i.onclick=t.callback;
+			AC(tbr,i);
+		}
+	}catch(e){
+		console.log(e.message);
+	}
+	AC(ID("menu"),tbr);
+}
