@@ -8,7 +8,7 @@ function dpd_virtuals_2(id) {
 		function(){createVP("var");});
 	addMenuItem("selPER",t=="PER"?"optionsel":"option",
 		MNU_PER,
-		t=="PER"?extdata:null
+		t=="PER"?extdata:null,
 		function(){createVP("per");});
 	addMenuItem("selGRP",
 		t=="GRP"?"optionsel":"option",
