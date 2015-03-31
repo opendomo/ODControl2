@@ -1,29 +1,29 @@
 function dpd_virtuals_2(id) {
 	sel = id;
 	var t = ports[id][5];
-	var extdata = " (" + ports[id][6] + ")";
+	var extdata = CT(" (" + ports[id][6] + ")");
 	addMenuItem("selVAR",t=="VAR"?"optionsel":"option",
 		MNU_VAR,
-		null,
+		t=="VAR"?extdata:null,
 		function(){createVP("var");});
 	addMenuItem("selPER",t=="PER"?"optionsel":"option",
 		MNU_PER,
-		CT(extdata),
+		t=="PER"?extdata:null
 		function(){createVP("per");});
 	addMenuItem("selGRP",
 		t=="GRP"?"optionsel":"option",
 		MNU_GRP,
-		CT(extdata),
+		t=="GRP"?extdata:null,
 		createGRP);
 	addMenuItem("selTTG",
 		t=="TTG"?"optionsel":"option",
 		MNU_TTG,
-		CT(extdata),
+		t=="TTG"?extdata:null,
 		createTTG);
 	addMenuItem("selDTG",
 		t=="DTG"?"optionsel":"option",
 		MNU_DTG,
-		CT(extdata),
+		t=="DTG"?extdata:null,
 		createDTG);	
 }
 
