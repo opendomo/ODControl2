@@ -15,12 +15,18 @@ a#f{padding:2px;}
 .SV input{width:90px;border:1px solid #888;border-radius:9px;box-shadow:inset 0px 0px 5px 0px #333;font-weight:bold;cursor:pointer;text-align:center}
 .SV input.OFF:after{background-color:#ddd;position:relative;content:"OFF";display:inline-block;color:#333;}
 .SV input.ON{background-color:#4F95EB;color:#fff;}
-u.tr {background-image:url("090.svg");}
-u.t0 {background-image:url("091.svg");}
-u.tp {background-image:url("092.svg");}
-u.te {background-image:url("093.svg");}
-u.tn {background-image:url("094.svg");}
-u.td {background-image:url("095.svg");}
-u.to {background-image:url("096.svg");}
-u.tm {background-image:url("097.svg");}
-div.t u{display:inline-block;text-decoration:none;background:none center no-repeat;}
+u.tr {background:url("090.svg")no-repeat center;background-size:50px;}
+u.t0 {background:url("091.svg")no-repeat center;background-size:50px;}
+u.tp {background:url("092.svg")no-repeat center;background-size:50px;}
+u.te {background:url("093.svg")no-repeat center;background-size:50px;}
+u.tn {background:url("094.svg")no-repeat center;background-size:50px;}
+u.td {background:url("095.svg")no-repeat center;background-size:50px;}
+u.to {background:url("096.svg")no-repeat center;background-size:50px;}
+u.tm {background:url("097.svg")no-repeat center;background-size:50px;}
+div.t u{
+	display:inline-block;
+	text-decoration:none;
+	background:none center no-repeat;
+	height: 50px;
+	width: 50px;
+}
