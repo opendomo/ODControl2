@@ -35,4 +35,4 @@ function init(){
 	}
 });
 }
-init();
+setTimeout(init,500);
