@@ -67,19 +67,19 @@ ai000:AIM_:+0000.0000:+00000|00020:a5:00255
 ai001:AIM_:+0000.0000:+00000|00020:a5:00255
 vtVAR:DVC_:OFF:VAR:OFF
 vtPER:DVC_:OFF:PER:OFF
-vtGRP:DVC_:ON:GRP:di002 di003 and
+vtGRP:DvC_:ON:GRP:di002 di003 and
 vtTRG:DVC_:OFF:TRG:cmpeq vt001 do000 on
 ";				break;			
 			
 			case "lsc cfg":
 			case "lsc 24-47":
 			case "lsc+24-47":
-				echo "vt004:DVC_:ON:ZTG:sec 00020 do000 on
-vtDTG:DVC_:OFF:DTG:vie220000 do000 on
-vtTTG:DVC_:OFF:TTG:0101000000 do000 off
-vtRDV:DVC_:ON:RDV:0004A33FFEDB
-vtRPT:DVC_:OFF:RPT:odctl ai000
-vtMDB:DVC_:+0000.0000:MDB:ai 10 0x000A 9600 n 1 3 i16
+				echo "vtZTG:DVC_:ON:ZTG:sec 00020 do000 on
+vtDTG:WVC_:OFF:DTG:vie220000 do000 on
+vtTTG:CVH_:OFF:TTG:0101000000 do000 off
+vtRDV:RvC_:ON:RDV:0004A33FFEDB
+vtRPT:DvC_:OFF:RPT:odctl ai000
+vtMDB:AvC_:+0000.0000:MDB:ai 10 0x000A 9600 n 1 3 i16
 vt010:DVC_:
 vt011:DVC_:
 vt012:XVH_:
