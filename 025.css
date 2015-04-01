@@ -5,6 +5,7 @@ textarea.tpl{width:100%;height:300px;padding-top:10px;border-radius:9px;margin-t
 textarea.err{width:100%;height:150px;padding-top:10px;border-radius:9px;margin-top:10px}
 #loading:after{content: "Loading...";}
 #offline:after{content:"Offline";}
+#loading,#offline {font-size: xx-large;}
 input#command,input#ODControlName{text-align:left;padding-left:10px}
 textarea#tacmd{background-color:#111;color:#fff;padding-left:10px}
 input#datein{width:200px;text-align:center;}

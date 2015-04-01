@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v2.0.0 BETA 3
+# v2.0.0 BETA 4
  
 CACHE:
 090.svg
@@ -15,4 +15,4 @@ NETWORK:
 *
 
 FALLBACK:
-/ /003.html
+/ /002.html
