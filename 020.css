@@ -3,3 +3,5 @@ li a{width:90px;border:0px solid #888;border-radius:9px;transition: all 0.5s eas
 .DO a.OFF:after,.DO a.ON:after{left:0px;position:relative;content:"OFF";display:inline-block;padding-top:5px;height:22px;width:46px;border-radius:7px;background-color:#ddd;color:#333;text-align:center;border:1px solid #999;box-shadow:inset 0px 0px 2px 0px #777;transition: all 0.5s ease;}
 .DO a.ON:after{left:42px;content:"ON";background-color:#4F95EB;color:#fff;border:1px solid #1c62b8;box-shadow:inset 0px 0px 2px 0px #444;transition: all 0.5s ease;} 
 select{float:right} 
+li.DD input {display:inline-block;float:none;width:70px; }
+li.DD select {display:inline-block;float:none;width:80px; }
