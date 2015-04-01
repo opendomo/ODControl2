@@ -3,9 +3,8 @@
 .DI a.ON{width:18px;height:18px;background-color:#4F95EB;border-radius:50%;box-shadow:#6982A0 0 -1px 7px 1px,#000 2px 5px 9px;border:1px solid #3591ff;}
 textarea.tpl{width:100%;height:300px;padding-top:10px;border-radius:9px;margin-top:10px}
 textarea.err{width:100%;height:150px;padding-top:10px;border-radius:9px;margin-top:10px}
-#loading:after{content: "Loading...";}
-#offline:after{content:"Offline";}
-#loading,#offline {font-size: xx-large;}
+#loading{background:url("090.svg") center no-repeat; height: 200px;}
+#offline{background:url("090.svg") center no-repeat; height: 200px;transform: rotatez(180deg); opacity:0.5;}
 input#command,input#ODControlName{text-align:left;padding-left:10px}
 textarea#tacmd{background-color:#111;color:#fff;padding-left:10px}
 input#datein{width:200px;text-align:center;}
