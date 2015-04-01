@@ -6,6 +6,22 @@
 <link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
 <script src='050.js'></script>
 <script defer src='100.js'></script>
+    <script>
+    function checkCache() {
+        var appCache = window.applicationCache;
+        var logACEvent = function(e) {
+            console.log("Cache Event " + e.type + " Status: " + appCache.status);
+        }
+        appCache.addEventListener('error', logACEvent, false);
+        appCache.addEventListener('checking', logACEvent, false);
+        appCache.addEventListener('noupdate', logACEvent, false);
+        appCache.addEventListener('downloading', logACEvent, false);
+        appCache.addEventListener('progress', logACEvent, false);
+        appCache.addEventListener('updateready', logACEvent, false);
+        appCache.addEventListener('cached', logACEvent, false);
+    }
+    checkCache();
+    </script>
 </head>
 <body class="offline">
 <div id='main'>
