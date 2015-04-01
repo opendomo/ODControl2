@@ -15,14 +15,14 @@ a#f{padding:2px;}
 .SV input{width:90px;border:1px solid #888;border-radius:9px;box-shadow:inset 0px 0px 5px 0px #333;font-weight:bold;cursor:pointer;text-align:center}
 .SV input.OFF:after{background-color:#ddd;position:relative;content:"OFF";display:inline-block;color:#333;}
 .SV input.ON{background-color:#4F95EB;color:#fff;}
-u.tr {background:url("090.svg")no-repeat center;background-size:30px;}
-u.t0 {background:url("091.svg")no-repeat center;background-size:30px;}
+u.tr {background:url("090.svg")no-repeat center;background-size:60px;}
+u.t0 {background:url("091.svg")no-repeat center;background-size:37px;}
 u.tp {background:url("092.svg")no-repeat center;background-size:30px;}
 u.te {background:url("093.svg")no-repeat center;background-size:30px;}
 u.tn {background:url("094.svg")no-repeat center;background-size:30px;}
-u.td {background:url("095.svg")no-repeat center;background-size:30px;}
+u.td {background:url("095.svg")no-repeat center;background-size:35px;}
 u.to {background:url("096.svg")no-repeat center;background-size:30px;}
-u.tm {background:url("097.svg")no-repeat center;background-size:30px;width: 55px;}
+u.tm {background:url("097.svg")no-repeat center;background-size:49px;}
 div.t u{
 	display:inline-block;
 	text-decoration:none;
@@ -32,4 +32,4 @@ div.t u{
 u.tr{width:60px;height:59px;}
 u.t0,u.td{width:35px;height:38px}
 u.tp,u.te,u.tn,u.to{width:28px;height:38px}
-u.tm{width:49px;height:38px}
+u.tm{width:49px;height:38px;}
