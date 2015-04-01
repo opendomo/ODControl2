@@ -1,16 +1,21 @@
 function AJ(){return new XMLHttpRequest();}
 function upd(){SC("lsc+hme",ci);}
 function upc(){SC("lsc+cfg",ci);}
-function M(i,c,t,r){var l=ID(t)?ID(t):CE("li",c,i);AC(l,CT(t));AC(l,r);return l;}
+function M(i,c,t,r){
+	var l=ID(t)?ID(t):CE("li",c,i);
+	AC(l,CT(t));
+	AC(l,r);
+	return l;
+}
 function CT(t){return D.createTextNode(t);}
 function SC(c,f){
-console.log(c);
-var x=AJ();
-x.open("GET",c.replace(/ /g,"+"));
-x.setRequestHeader("Cache-Control","no-cache,max-age=0");
-x.setRequestHeader("Pragma","no-cache");
-x.send(null);
-x.onload=f;
+	console.log(c);
+	var x=AJ();
+	x.open("GET",c.replace(/ /g,"+"));
+	x.setRequestHeader("Cache-Control","no-cache,max-age=0");
+	x.setRequestHeader("Pragma","no-cache");
+	x.send(null);
+	x.onload=f;
 }
 function V(c){return ID(c).value;}
 function n(c){

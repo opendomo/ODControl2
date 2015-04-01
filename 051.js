@@ -19,3 +19,4 @@ LBL_EXI="Exit",
 LBL_INP="Input port",
 LBL_OUTP="Output port",
 LBL_TYPE="Type";
+var wdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
