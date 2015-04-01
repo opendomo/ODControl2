@@ -7,7 +7,7 @@ top:0;
 left:0;
 background-color:rgba(0,0,0,0.5);
 }
-.loading {
+body.loading img.tr{
 -webkit-animation: spin 2s infinite linear;
 }
 @-webkit-keyframes spin {

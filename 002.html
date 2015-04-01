@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html manifest="099.appcache">
 <head><title>ODControl</title>
-<meta name='apple-mobile-web-app-capable' content='yes'/>
-<meta name='apple-mobile-web-app-title' content='ODControl'>
+<meta name=viewport content='width=device-width,initial-scale=1,maximum-scale=1'>
+<meta name=apple-mobile-web-app-capable content=yes/>
 <link rel=apple-touch-icon href='http://opendomo.com/odc2.png'/>
-<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>	
 <script src='050.js'></script>
+<script defer src='100.js'></script>
 </head>
-<body class="loading">
+<body class="offline">
 <div id='main'>
 	<div class='t'>
 		<img class='tr' src='090.svg'/>
@@ -21,8 +21,8 @@
 		<img class='to' src='096.svg'/>
 	</div>
 	<div id='h'></div>
-	<ul id='b'><li id='loading'></li></ul>
+	<ul id='b'><li id="offline"></li></ul>
 	<a href="http://www.opendomo.com" target='new' id='f'></a>
-	</div>
+</div>
 </body>
 </html>

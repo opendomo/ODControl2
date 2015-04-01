@@ -13,6 +13,7 @@ function init_cfg(){
 		{id:"mnuconsl", name:MNU_CON, callback:loadConsole}
 	];
 	loadODControlData();
-	loadMenu()
+	loadMenu();
+	document.body.className="";
 }
 setTimeout(init_cfg,500);

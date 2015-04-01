@@ -33,6 +33,7 @@ function init(){
 	}catch(e){
 		console.log("Error reading ODControl version");
 	}
+	document.body.className="";
 });
 }
 setTimeout(init,500);
