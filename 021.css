@@ -5,6 +5,7 @@ li a{width:90px;border:0px solid #888;border-radius:9px;}
 #frm{width:100%;height:100%;border:none}
 li{list-style:none;padding:12px 29px 15px 34px;margin:2px;border-bottom:1px solid #ddd}
 li a,li input{float:right;height:29px;margin-top:-5px;border:1px solid #ccc;border-radius:9px;max-width: 120px;}
+li span{float:right;}
 div .t{text-align:center;width:100%;background-color:#fff;white-space:nowrap;}
 div.hme a.cat,div.cfg a.cat,a.cat{text-align:center;width:30%;}
 div.hme,div.cfg,div.sec,a#f{box-shadow:5px 5px 15px #888;width:95%;margin-left:auto;margin-right:auto;text-align:center;}
