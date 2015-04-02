@@ -1,4 +1,4 @@
-a:after{transition: all 0.5s ease;}
+*,a:after{transition: all 0.5s ease;}
 li a{width:90px;border:0px solid #888;border-radius:9px;transition: all 0.5s ease;-webkit-transition: all 0.5s ease;}
 .DO a {background-color:#eee;box-shadow:inset 0px 1px 3px 0px #333;font-weight:bold;font-size:14px;cursor:pointer;}
 .DO a.OFF:after,.DO a.ON:after{left:0px;position:relative;content:"OFF";display:inline-block;padding-top:5px;height:22px;width:46px;border-radius:7px;background-color:#ddd;color:#333;text-align:center;border:1px solid #999;box-shadow:inset 0px 0px 2px 0px #777;}
