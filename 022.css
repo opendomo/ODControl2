@@ -1,29 +1,9 @@
-div .t{text-align:center;width:100%;padding:10px;background-color:#fff;zoom:0.8;}
-img{padding:0px;margin:-1px}
-img.tr{margin-bottom:-7px;margin-right:4px}
-div.hme,div.cfg,div.sec,a#f{box-shadow:5px 5px 15px #888;width:95%;margin-left:auto;margin-right:auto;text-align:center;}
-div.hme,.hme a, div.cfg,.cfg a,div.sec, .sec a,a#f{color:#fff;background-color:#4F95EB;text-decoration:none;text-shadow:1px 1px #444;font-size:12px;font-weight:bold;}
-div.hme a.cat,div.cfg a.cat,a.cat{;text-align:center;;width:30%;}
-a#f{padding:2px;}
 .SV input{width:90px;border:1px solid #888;border-radius:9px;box-shadow:inset 0px 0px 5px 0px #333;font-weight:bold;cursor:pointer;text-align:center}
 .SV input.OFF:after{background-color:#ddd;position:relative;content:"OFF";display:inline-block;color:#333;}
 .SV input.ON{background-color:#4F95EB;color:#fff;}
-u.tr {background:url("090.svg");background-size:60px;}
-u.t0 {background:url("091.svg");background-size:37px;}
-u.tp {background:url("092.svg");background-size:30px;}
-u.te {background:url("093.svg");background-size:30px;}
-u.tn {background:url("094.svg");background-size:30px;}
-u.td {background:url("095.svg");background-size:35px;}
-u.to {background:url("096.svg");background-size:30px;}
-u.tm {background:url("097.svg");background-size:49px;}
-div.t u{
-	display:inline-block;
-	text-decoration:none;
-	background-position:center;
-	background-repeat:no-repeat;
-	padding: 1px;
-}
-u.tr{width:60px;height:59px;}
-u.t0,u.td{width:35px;height:38px}
-u.tp,u.te,u.tn,u.to{width:28px;height:38px}
-u.tm{width:49px;height:38px;}
+.DO a {background-color:#eee;box-shadow:inset 0px 1px 3px 0px #333;font-weight:bold;font-size:14px;cursor:pointer;}
+.DO a.OFF:after,.DO a.ON:after{left:0px;position:relative;content:"OFF";display:inline-block;padding-top:5px;height:22px;width:46px;border-radius:7px;background-color:#ddd;color:#333;text-align:center;border:1px solid #999;box-shadow:inset 0px 0px 2px 0px #777;}
+.DO a.ON:after{left:42px;content:"ON";background-color:#4F95EB;color:#fff;border:1px solid #1c62b8;box-shadow:inset 0px 0px 2px 0px #444;transition: all 0.5s ease;} 
+select{float:right} 
+li.DD input {display:inline-block;float:none;width:65px;}
+li.DD select {display:inline-block;float:none;width:80px;}

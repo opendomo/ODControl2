@@ -11,7 +11,12 @@ To optimize page load, files are organized in ranges:
  2. Configuration tools: JS [100-160] CSS [020-031]
  3. All: SVG [090-098], Manifest [099]
  4. Templates: [080-089]
+ 
+ 
+## CSS index
+	020 - 
 
+ 
 ## Javascript index
 
 	Deprecated files:
