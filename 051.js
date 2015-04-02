@@ -20,3 +20,4 @@ LBL_INP="Input port",
 LBL_OUTP="Output port",
 LBL_TYPE="Type";
 var wdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var months=["January","February","March","April","May","June","July","August","September","October","November","December","**"];

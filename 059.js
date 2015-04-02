@@ -17,9 +17,11 @@ function cWV(n,v){
 	var l=ID(n);
 	if(!l)l=CE("li","DD","li");
 	AC(l,CT(n));
-	AC(l,r);
-	AC(l,s);
-	AC(l,j);
+	var span=CE("span","cWV")
+	AC(span,r);
+	AC(span,s);
+	AC(span,j);
+	AC(l,span);
 	j.addEventListener("click",function(){
 		var day=s.value;
 		var hour=r.value.replace(/:/g,"");
