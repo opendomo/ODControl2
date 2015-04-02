@@ -9,5 +9,5 @@ input#command,input#ODControlName{text-align:left;padding-left:10px}
 textarea#tacmd{background-color:#111;color:#fff;padding-left:10px}
 input#datein{width:200px;text-align:center;}
 select#datetype{width:200px;float:right;padding-left:10px}
-a#hme2.cat,a#back.cat{width:40%}
+
 input[id^=input]{text-align: left;padding-left: 10px;width: 150px;}

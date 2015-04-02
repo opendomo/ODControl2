@@ -1,14 +1,16 @@
 body,html{padding:0;font-family:sans-serif;background-color:#222;margin:0px}
 #main{overflow-x:hidden;min-height:100vh;background-color:#fff;margin:auto;width:100%;max-width:480px;}
-
-u.tr {background:url("090.svg");background-size:60px;}
+#adv,#hme,#cfg,#sec{border-bottom-width:2px}
+#f{display:block;text-align:center;padding:2px;}
+ul{padding:0}
+u.tr {background:url("090.svg");background-size:60px;width:60px;height:59px;}
 u.t0 {background:url("091.svg");background-size:37px;}
 u.tp {background:url("092.svg");background-size:30px;}
 u.te {background:url("093.svg");background-size:30px;}
 u.tn {background:url("094.svg");background-size:30px;}
 u.td {background:url("095.svg");background-size:35px;}
 u.to {background:url("096.svg");background-size:30px;}
-u.tm {background:url("097.svg");background-size:49px;}
+u.tm {background:url("097.svg");background-size:49px;width:49px;height:38px;}
 div.t u{
 	display:inline-block;
 	text-decoration:none;
@@ -16,7 +18,5 @@ div.t u{
 	background-repeat:no-repeat;
 	padding: 1px;
 }
-u.tr{width:60px;height:59px;}
 u.t0,u.td{width:35px;height:38px}
 u.tp,u.te,u.tn,u.to{width:28px;height:38px}
-u.tm{width:49px;height:38px;}

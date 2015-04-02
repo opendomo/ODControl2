@@ -4,3 +4,4 @@ span.unselected{border-radius:7px;box-shadow:inset 0px 1px 2px 0px #333;backgrou
 span.selected{background-color:#4F95EB;color:#fff;box-shadow:inset 0px 0px 6px 0px #666;border-radius:7px;font-weight:bold;}
 div.buttons{padding:10px;text-align:center;height:30px;margin-top:30px}
 a.button,li#op.backmenu{background-color:#053F95;width:90px;height:20px;border-radius:7px;color:#fff;padding:10px;margin-right:5%;box-shadow:0px 0px 10px 0px #333;cursor:pointer;font-weight:bold;padding-left: 20px;padding-right: 20px;}
+li.typeXV {opacity:0.5;}

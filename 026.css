@@ -9,6 +9,6 @@ input#ptDI{background-color:#D1D0DA}
 input#ptAO{background-color:#F0F3FF}
 input#ptAI{background-color:#D2D2D2}
 input.ronum{width:50px}
-input[type*="range"]{width:150px}
+input[type*="range"]{width:150px;border:none;}
 input[id*="ai"]{width:90px}
 input#register{text-align:center}
