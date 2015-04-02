@@ -19,18 +19,6 @@ To optimize page load, files are organized in ranges:
  
 ## Javascript index
 
-	Deprecated files:
-	002 - show hide G SA AC CE JS RB SEL
-	003 - RL
-	004 - AJ upd upc M ID CT SC V n ci TB
-	005 - ns sadv HME CFG ADV
-	006 - AM SV
-	007 - loadODinfo
-	008 - TB RL
-	009 - G SA AC CE JS
-	010 - adv
-
-
 	050 - ID show hide G SA AC CE JS RB SEL
 	051 $ (literals)
 	052 - TB RL ns HME CFG ADV
