@@ -2,18 +2,20 @@ function addToolbarSaveCancelHelp(callbacksave,callbackcancel,keyword){
 	var tbr=CE("div");
 	tbr.setAttribute("class","buttons");
 	if(callbacksave){
-		var menu_ok_caption=CT(LBL_SAV);
-		var menu_ok=CE("a","button","savetxt");
-		menu_ok.addEventListener("click",callbacksave);
-		menu_ok.appendChild(menu_ok_caption);
-		tbr.appendChild(menu_ok);
+		var mok=CE("a","button","savetxt");
+		SA(mok,"alt",LBL_SAV);
+		SA(mok,"aria-role","button");
+		mok.addEventListener("click",callbacksave);
+		mok.appendChild(CT(LBL_SAV));
+		tbr.appendChild(mok);
 	}
 	if(callbackcancel){
-		var menu_cancel_caption=CT(LBL_EXI);
-		var menu_cancel=CE("a","button","exittxt");
-		menu_cancel.addEventListener("click",callbackcancel);
-		menu_cancel.appendChild(menu_cancel_caption);
-		tbr.appendChild(menu_cancel);
+		var mcan=CE("a","button","exittxt");
+		SA(mcan,"alt",LBL_EXI);
+		SA(mcan,"aria-role","button");
+		mcan.addEventListener("click",callbackcancel);
+		mcan.appendChild(CT(LBL_EXI));
+		tbr.appendChild(mcan);
 	}
 	ID("menu").appendChild(tbr);
 }
