@@ -1,18 +1,3 @@
-function loadCSSfile(filename){
-	var fileref=document.createElement("link");
-	fileref.setAttribute("rel", "stylesheet");
-	fileref.setAttribute("type", "text/css");
-	fileref.setAttribute("href", filename);
-	document.getElementsByTagName("head")[0].appendChild(fileref);
-}  
-
-function loadJSfile(filename){
-	var fileref=document.createElement('script');
-	fileref.setAttribute("type","text/javascript");
-	fileref.setAttribute("src", filename);
-	document.getElementsByTagName("head")[0].appendChild(fileref);
-}  
-
 function getPortListByType(t){
 	var pt = "";
 	if (t==undefined) t=[];
@@ -34,4 +19,3 @@ function getPortListByType(t){
 	}  
 	return ret;
 } 
-

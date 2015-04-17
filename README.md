@@ -44,7 +44,7 @@ To optimize page load, files are organized in ranges:
 	102 - changeTime
 	103 - ID CE CT pad validate_field (global variables)
 	104 - setLDate setIntervalRefreshDate saveNTP saveDateTime
-	105 - loadCSSfile loadJSfile getPortListByType
+	105 - getPortListByType
 	106 - clearConfiguration ptoREST dteToStr
 	107 - loadODControlData deleteLink 
 	108 - HME2 addMenuItem
@@ -93,8 +93,8 @@ To optimize page load, files are organized in ranges:
 	152 - displayPortDetails
 	153 - defpn
 	154 - send_command
-	155 $ grptypes_desc trgtypes_desc tags_desc analogtype_desc
-	156 - (global variables)
+	155 - (global variables)
+	156 $ (literals) grptypes_desc trgtypes_desc tags_desc analogtype_desc
 	157 $ ZTG_HI TRG_HI MDB_HI SCH_HI GRP_HI TTG_HI DTG_HI RDV_HI RPT_HI RDV_WI
 	158 $ VAR_HI PER_HI
 	159 $ (literals)
