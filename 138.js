@@ -7,7 +7,7 @@ function loadLinksMenu(port1,port2){
 	clearMenu();
 	addMenuItem("lnkinp","menuitem",LBL_INP,cSF("inport",p1,getPortListByType(["DI","DO","AI","AO","SV","Rv","CV","DV","Dv","AV","Av"])));
 	addMenuItem("lnkout","menuitem",LBL_OUTP,cSF("outport",p2,getPortListByType(["DO","AO","DV","TV","AV","Av"])));
-	addMenuItem("lnktyp","menuitem","Link type",cSF(LBL_TYPE,"d",lnktypes,lnktypes_desc));
+	addMenuItem("lnktyp","menuitem","Link type",cSF("type","d",lnktypes,lnktypes_desc));
 
 	if(mylinks.length>0)addMenuItem("lnkadd","menuitem","Links:",null,null);
 	for(var i=0;i<mylinks.length;i++){
