@@ -1,4 +1,4 @@
-function init_cfg(){
+function init(){
 	mainMenu = [
 		{id:"mnuconfp", name:MNU_CFP, callback:loadPortsMenu},
 		{id:"mnucfgln", name:MNU_CFL, callback:loadLinksMenu},
@@ -16,4 +16,4 @@ function init_cfg(){
 	loadMenu();
 	document.body.className="";
 }
-setTimeout(init_cfg,500);
+setTimeout(init,500);
