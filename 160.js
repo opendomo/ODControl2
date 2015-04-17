@@ -1,4 +1,13 @@
 function init(){
+	var h=ID("adv");
+	if(!h){
+		ID("h").innerHTML="";
+		TB('hme','Home','HME');
+		TB('cfg','Settings','CFG');
+		TB('adv','Configure','ADV');
+		SA(ID("h"),"class","hme");
+		HME();
+	}	
 	mainMenu = [
 		{id:"mnuconfp", name:MNU_CFP, callback:loadPortsMenu},
 		{id:"mnucfgln", name:MNU_CFL, callback:loadLinksMenu},
