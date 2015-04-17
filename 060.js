@@ -36,4 +36,4 @@ function init(){
 	document.body.className="";
 });
 }
-setTimeout(init,500);
+
