@@ -5,8 +5,7 @@ function init(){
 		TB('hme','Home','HME');
 		TB('cfg','Settings','CFG');
 		TB('adv','Configure','ADV');
-		SA(ID("h"),"class","hme");
-		HME();
+		SA(ID("h"),"class","adv");
 	}	
 	mainMenu = [
 		{id:"mnuconfp", name:MNU_CFP, callback:loadPortsMenu},
