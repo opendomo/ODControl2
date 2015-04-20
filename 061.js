@@ -1,1 +1,3 @@
-setTimeout(init,500);
+setTimeout(function(){
+	setTimeout(init,500);
+}, 500);
