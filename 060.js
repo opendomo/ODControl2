@@ -19,7 +19,7 @@ function init(){
 		TB('hme','Home','HME');
 		TB('cfg','Settings','CFG');
 		TB('adv','Configure','ADV');
-		SA(ID("h"),"class","adv");
+		SA(ID("h"),"class","hme");
 		HME();
 	}
 	SC("net+show",ns);
