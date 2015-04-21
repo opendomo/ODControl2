@@ -15,7 +15,7 @@ function ns(c){
 }
 function ADV(){
 	if (typeof loadMenu == "function"){
-		SEL("adv");
+		SA(ID("h"),"class","adv");
 		loadMenu();
 	}else {
 		if (cport==nport) document.location="./adv"; 
@@ -24,7 +24,7 @@ function ADV(){
 }
 var it;
 function HME(){
-	SEL("hme");
+	SA(ID("h"),"class","hme");
 	ID('b').innerHTML='';
 	clearInterval(it);
 	upd();

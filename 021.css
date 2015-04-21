@@ -11,3 +11,4 @@ div.hme a.cat,div.cfg a.cat,a.cat{text-align:center;width:30%;}
 div.hme,div.cfg,div.adv,a#f{box-shadow:5px 5px 15px #888;width:95%;margin-left:auto;margin-right:auto;text-align:center;}
 div.hme,.hme a, div.cfg,.cfg a,div.adv, .adv a,a#f{
 	color:#fff;background-color:#4F95EB;text-decoration:none;text-shadow:1px 1px #444;font-size:12px;font-weight:bold;}
+div.hme #hme, div.cfg #cfg, div.adv #adv {background-color: #053f95;}
