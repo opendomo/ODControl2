@@ -36,6 +36,4 @@ function CFG(){
 	clearInterval(it);
 	upc();
 	it=setInterval(upc,5000);
-	SEL("cfg");
 }
-
