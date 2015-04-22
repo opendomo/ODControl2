@@ -12,11 +12,12 @@ u.td {background:url("095.svg");background-size:35px;}
 u.to {background:url("096.svg");background-size:30px;}
 u.tm {background:url("097.svg");background-size:49px;width:49px;height:38px;}
 div.t u{
-	display:inline-block;
-	text-decoration:none;
-	background-position:center;
-	background-repeat:no-repeat;
-	padding: 1px;
+display:inline-block;
+text-decoration:none;
+background-position:center;
+background-repeat:no-repeat;
+padding: 1px;
 }
 u.t0,u.td{width:35px;height:38px}
 u.tp,u.te,u.tn,u.to{width:28px;height:38px}
+li span{float:right}
