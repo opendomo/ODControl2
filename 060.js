@@ -31,9 +31,8 @@ function init(){
 		uid = p[3];
 		ID("f").innerHTML="v"+ver +" "+ uid;
 	}catch(e){
-		console.log("Error reading ODControl version");
+		console.log("Error reading version");
 	}
 	document.body.className="";
 });
 }
-
