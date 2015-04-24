@@ -23,7 +23,10 @@ function init(){
 		HME();
 	}
 	SC("net+show",ns);
-	SC("ver",function(v){
+	SC("ver",lv);
+	document.body.className="";
+}
+function lv(v){
 	try {
 		var p=v.target.responseText.split(" ");;
 		odcontrolname = p[0];
@@ -33,6 +36,4 @@ function init(){
 	}catch(e){
 		console.log("Error reading version");
 	}
-	document.body.className="";
-});
 }

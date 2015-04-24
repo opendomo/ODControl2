@@ -7,6 +7,8 @@ function init(){
 		TB('adv','Configure','ADV');
 		SA(ID("h"),"class","adv");
 	}	
+	SC("net+show",ns);
+	SC("ver",lv);	
 	mainMenu = [
 		{id:"mnuconfp", name:MNU_CFP, callback:loadPortsMenu},
 		{id:"mnucfgln", name:MNU_CFL, callback:loadLinksMenu},
