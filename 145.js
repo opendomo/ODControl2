@@ -21,4 +21,3 @@ function dpd_init(id){
 		addMenuItem("ftag","menuitem",LBL_TAG,cSF("tag",ports[id][2],tags,tags_desc),null);
 	}
 }
-
