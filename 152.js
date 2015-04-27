@@ -8,8 +8,7 @@ function displayPortDetails(id){
 	dpd_init(id);
 	if (isanalog(id)) dpd_analog(id);
 	if (isvirtual(id) && isenabled(id)) {
-		dpd_virtuals_1(id);
-		dpd_virtuals_2(id);
+		dpd_virtuals(id);
 	}
 	addToolbarSaveCancelHelp(function(){
 	if(validate_field("portname",rx_str5)){
