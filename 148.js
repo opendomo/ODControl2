@@ -1,15 +1,30 @@
-function dpd_analog(id) {
-	var pr = ports[id][5].split("|");
-
-	minval = parseFloat(pr[0]?pr[0]:0);
-	maxval = parseFloat(pr[1]?pr[1]:100);
-	tolval = ((""==ports[id][7])?1:parseFloat(0+ports[id][7]));
-
-	if(isenabled(id)){
-	addMenuItem("fldantype","menuitem",LBL_PTY,cSF("anlgtype", ports[id][6], analogtype, analogtype_desc), null);
-	addMenuItem("fldminval","menuitem",LBL_MIN,cIF("minvalue","number",minval,"[0-9]+"),null);
-	addMenuItem("fldmaxval","menuitem",LBL_MAX,cIF("maxvalue","number",maxval,"[0-9]+"),null);
-	addMenuItem("fldtolerance","menuitem",LBL_TOL,cIF("tolerance","number",tolval,"[0-9]+"),null);
-	}
+function dpd_virtuals_1(id) {
+	sel = id;
+	var t = ports[id][5];
+	var extdata = CT(" (" + ports[id][6] + ")");
+	addMenuItem("selZTG", 
+		t=="ZTG"?"optionsel":"option", 
+		MNU_ZTG,	
+		t=="ZTG"?extdata:null, createZTG);
+	addMenuItem("selTRG", 
+		t=="TRG"?"optionsel":"option", 
+		MNU_TRG, 
+		t=="TRG"?extdata:null, createTRG);
+	addMenuItem("selRDV", 
+		t=="RDV"?"optionsel":"option", 
+		MNU_RDV, 
+		t=="RDV"?extdata:null, createRDV);
+	addMenuItem("selRPT", 
+		t=="RPT"?"optionsel":"option", 
+		MNU_RPT, 
+		t=="RPT"?extdata:null, createRPT);
+	addMenuItem("selMDB", 
+		t=="MDB"?"optionsel":"option", 
+		MNU_MDB, 
+		t=="MDB"?extdata:null, createMDB);
+	addMenuItem("selSCH", 
+		t=="SCH"?"optionsel":"option", 
+		MNU_SCH, 
+		t=="SCH"?extdata:null, createSCH);
 }
 

@@ -1,30 +1,29 @@
-function dpd_virtuals_1(id) {
+function dpd_virtuals_2(id) {
 	sel = id;
 	var t = ports[id][5];
 	var extdata = CT(" (" + ports[id][6] + ")");
-	addMenuItem("selZTG", 
-		t=="ZTG"?"optionsel":"option", 
-		MNU_ZTG,	
-		t=="ZTG"?extdata:null, createZTG);
-	addMenuItem("selTRG", 
-		t=="TRG"?"optionsel":"option", 
-		MNU_TRG, 
-		t=="TRG"?extdata:null, createTRG);
-	addMenuItem("selRDV", 
-		t=="RDV"?"optionsel":"option", 
-		MNU_RDV, 
-		t=="RDV"?extdata:null, createRDV);
-	addMenuItem("selRPT", 
-		t=="RPT"?"optionsel":"option", 
-		MNU_RPT, 
-		t=="RPT"?extdata:null, createRPT);
-	addMenuItem("selMDB", 
-		t=="MDB"?"optionsel":"option", 
-		MNU_MDB, 
-		t=="MDB"?extdata:null, createMDB);
-	addMenuItem("selSCH", 
-		t=="SCH"?"optionsel":"option", 
-		MNU_SCH, 
-		t=="SCH"?extdata:null, createSCH);
+	addMenuItem("selVAR",t=="VAR"?"optionsel":"option",
+		MNU_VAR,
+		t=="VAR"?extdata:null,
+		function(){createVP("var");});
+	addMenuItem("selPER",t=="PER"?"optionsel":"option",
+		MNU_PER,
+		t=="PER"?extdata:null,
+		function(){createVP("per");});
+	addMenuItem("selGRP",
+		t=="GRP"?"optionsel":"option",
+		MNU_GRP,
+		t=="GRP"?extdata:null,
+		createGRP);
+	addMenuItem("selTTG",
+		t=="TTG"?"optionsel":"option",
+		MNU_TTG,
+		t=="TTG"?extdata:null,
+		createTTG);
+	addMenuItem("selDTG",
+		t=="DTG"?"optionsel":"option",
+		MNU_DTG,
+		t=="DTG"?extdata:null,
+		createDTG);	
 }
 

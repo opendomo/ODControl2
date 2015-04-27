@@ -1,16 +1,14 @@
-function dpd_init(id){
-	clearMenu();
-	var e=cIF("portname","text",ports[id][0],"[a-zA-Z0-9]{5}");
-	SA(e,"maxlength",5);
-	addMenuItem("fpn","menuitem",LBL_PNM,e,null);
+function dpd_analog(id) {
+	var pr = ports[id][5].split("|");
 
-	var en=cCF("enabled",isenabled(id));
-	addMenuItem("fen","menuitem",LBL_ENA, en, null);
-	if(!isvirtual(id))ID("fen").style.display="none";
-	
+	minval = parseFloat(pr[0]?pr[0]:0);
+	maxval = parseFloat(pr[1]?pr[1]:100);
+	tolval = ((""==ports[id][7])?1:parseFloat(0+ports[id][7]));
+
 	if(isenabled(id)){
-		addMenuItem("fvis","menuitem",LBL_VIS,cCF("visible",isvisible(id)),null);
-		addMenuItem("fset","menuitem",LBL_SCO,cCF("inconfig",isinconfig(id)),null);
-		addMenuItem("ftag","menuitem",LBL_TAG,cSF("tag",ports[id][2],tags,tags_desc),null);
+	addMenuItem("fldantype","menuitem",LBL_PTY,cSF("anlgtype", ports[id][6], analogtype, analogtype_desc), null);
+	addMenuItem("fldminval","menuitem",LBL_MIN,cIF("minvalue","number",minval,"[0-9]+"),null);
+	addMenuItem("fldmaxval","menuitem",LBL_MAX,cIF("maxvalue","number",maxval,"[0-9]+"),null);
+	addMenuItem("fldtolerance","menuitem",LBL_TOL,cIF("tolerance","number",tolval,"[0-9]+"),null);
 	}
 }
